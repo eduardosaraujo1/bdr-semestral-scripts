@@ -1,0 +1,146 @@
+
+Table ALUNO {
+  id_aluno INTEGER [pk]
+  nm_aluno VARCHAR(255) [not null]
+  cpf_aluno CHAR(11) [not null]
+  dt_nascimento_aluno DATE [not null]
+  nm_email_aluno VARCHAR(255) [not null]
+  nm_endereco_aluno VARCHAR(255) [not null]
+  cd_situacao_aluno NUMBER(4) [not null]
+}
+
+Table PROFESSOR {
+  id_professor INTEGER [pk]
+  nm_professor VARCHAR(255) [not null]
+  cpf_professor CHAR(11) [not null]
+  nm_email_professor VARCHAR(255) [not null]
+  nm_especialidade_professor VARCHAR(255) [not null]
+  dt_admissao_professor DATE [not null]
+}
+
+Table CURSO {
+  id_curso INTEGER [pk, increment]
+  sg_curso CHAR(10) [not null]
+  nm_curso VARCHAR(255) [not null]
+  ds_curso VARCHAR(255)
+  cd_periodo_curso NUMBER(4) [not null]
+  qt_carga_horaria_curso NUMBER(4) [not null]
+  qt_semestre_curso NUMBER(2) [not null]
+  cd_modalidade_curso NUMBER(4) [not null]
+  dt_ativacao_curso DATE [not null, default: `TRUNC(SYSDATE)`]
+  dt_desativacao_curso DATE
+}
+
+Table DISCIPLINA {
+  id_disciplina INTEGER [pk, increment]
+  sg_disciplina CHAR(10) [not null]
+  nm_disciplina VARCHAR(255) [not null]
+  ds_disciplina VARCHAR(255)
+  qt_carga_horaria_disciplina NUMBER(4) [not null]
+  dt_ativacao_disciplina DATE [not null, default: `TRUNC(SYSDATE)`]
+  dt_desativacao_disciplina DATE
+}
+
+Table DISCIPLINA_CURSO {
+  id_disciplina INTEGER [ref: > DISCIPLINA.id_disciplina]
+  id_curso INTEGER [ref: > CURSO.id_curso]
+  id_ciclo_disciplina_curso NUMBER(2) [not null]
+  indexes {
+    (id_disciplina, id_curso) [pk]
+  }
+}
+
+Table TURMA {
+  id_turma INTEGER [pk]
+  dt_inicio_turma DATE [not null, default: `TRUNC(SYSDATE)`]
+  dt_fim_turma DATE
+  id_ciclo_turma NUMBER(2) [not null]
+
+  id_curso INTEGER [not null, ref: > CURSO.id_curso]
+}
+
+Table DISCIPLINA_TURMA {
+  id_turma INTEGER [ref: > TURMA.id_turma]
+  id_disciplina INTEGER [ref: > DISCIPLINA.id_disciplina]
+  qt_vagas_disciplina_turma NUMBER(3) [not null]
+  id_professor INTEGER [not null, ref: > PROFESSOR.id_professor]
+
+  indexes {
+    (id_turma, id_disciplina) [pk]
+  }
+}
+
+Table MATRICULA {
+  id_matricula INTEGER [pk, increment]
+  id_turma INTEGER [not null]
+  id_disciplina INTEGER [not null]
+  id_aluno INTEGER [not null, ref: > ALUNO.id_aluno]
+  INDEXES {
+    (id_turma, id_disciplina, id_aluno) [unique]
+  }
+}
+Ref: MATRICULA.(id_turma, id_disciplina)
+    > DISCIPLINA_TURMA.(id_turma, id_disciplina)
+
+Table OFERTA {
+  id_oferta INTEGER [pk]
+  cd_sala_oferta VARCHAR(20) [not null]
+  dd_semana_oferta CHAR(3) [not null]
+  hr_inicio_oferta NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
+  hr_fim_oferta NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
+
+  id_turma INTEGER [not null]
+  id_disciplina INTEGER [not null]
+
+  checks {
+    `dd_semana_oferta IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'chk_dia_semana']
+  }
+}
+Ref: OFERTA.(id_turma, id_disciplina)
+    > DISCIPLINA_TURMA.(id_turma, id_disciplina)
+
+Table AVALIACAO {
+  id_avaliacao INTEGER [pk]
+
+  ds_avaliacao VARCHAR(255)
+  qt_peso_avaliacao NUMBER(3,1) [not null]
+  qt_nota_maxima_avaliacao NUMBER(4,2) [not null]
+  dt_hr_avaliacao DATE [not null]
+  cd_tipo_avaliacao NUMBER(4) [not null]
+
+  id_turma INTEGER [not null]
+  id_disciplina INTEGER [not null]
+}
+Ref: AVALIACAO.(id_turma, id_disciplina)
+    > DISCIPLINA_TURMA.(id_turma, id_disciplina)
+
+Table REGISTRO_AULA {
+  dt_registro_aula DATE [check: `dt_registro_aula=TRUNC(dt_registro_aula)`]
+  id_oferta INTEGER [ref: > OFERTA.id_oferta]
+
+  indexes {
+    (dt_registro_aula, id_oferta) [pk]
+  }
+}
+
+Table AVALIACAO_RESULTADO {
+  id_avaliacao INTEGER [ref: > AVALIACAO.id_avaliacao]
+  id_matricula INTEGER [ref: > MATRICULA.id_matricula]
+  qt_nota_avaliacao_aluno NUMBER(4,2) [not null]
+
+  indexes {
+    (id_avaliacao, id_matricula) [pk]
+  }
+}
+
+Table ALUNO_REGISTRO_AULA {
+  dt_registro_aula DATE
+  id_oferta INTEGER
+  id_matricula INTEGER [ref: > MATRICULA.id_matricula]
+
+  indexes {
+    (dt_registro_aula, id_oferta, id_matricula) [pk]
+  }
+}
+Ref: ALUNO_REGISTRO_AULA.(dt_registro_aula, id_oferta)
+    > REGISTRO_AULA.(dt_registro_aula, id_oferta)
