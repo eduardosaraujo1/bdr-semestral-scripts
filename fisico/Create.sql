@@ -48,7 +48,7 @@ CREATE TABLE curso (
 /
 CREATE TABLE disciplina (
   id_disciplina INTEGER PRIMARY KEY,
-  sg_disciplina CHAR(10) NOT NULL,
+  sg_disciplina CHAR(16) NOT NULL,
   nm_disciplina VARCHAR(255) NOT NULL,
   ds_disciplina VARCHAR(255),
   qt_carga_horaria_disciplina NUMBER(4) NOT NULL,
