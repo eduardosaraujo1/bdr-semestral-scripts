@@ -3447,7 +3447,7 @@ SELECT
     1 as qt_peso_avaliacao,
     10 as qt_nota_maxima_avaliacao,
     -- Adiciona 2 meses e define o horário para 16:00 (16/24 do dia)
-    ADD_MONTHS(TRUNC(t.dt_inicio_turma), 2) + (16/24) as dt_hr_avaliacao,
+    ADD_MONTHS(TRUNC(t.dt_inicio_turma), 2) + (9/24) + (TRUNC(DBMS_RANDOM.VALUE(1, 15)) * 50) / (24 * 60) as dt_hr_avaliacao,
     regra.cd_fixo,
     dt.id_turma,
     dt.id_disciplina
@@ -3478,7 +3478,7 @@ SELECT
     '(P1) Primeira prova avaliativa do semestre',
     1,
     10,
-    ADD_MONTHS(TRUNC(dados.dt_inicio_turma), 2) + (16/24),
+    ADD_MONTHS(TRUNC(dados.dt_inicio_turma), 2) + (9/24) + (TRUNC(DBMS_RANDOM.VALUE(1, 15)) * 50) / (24 * 60),
     0,
     dados.id_turma,
     dados.id_disciplina
@@ -3494,7 +3494,6 @@ FROM (
 ) dados;
 
 -- TABELA AVALIACAO_RESULTADO
-
 INSERT INTO avaliacao_resultado (
     id_avaliacao,
     id_matricula,
