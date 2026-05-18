@@ -3354,6 +3354,9 @@ VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-06-01', 'YYYY-MM-DD'), NULL, 1, 4);
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-06-01', 'YYYY-MM-DD'), NULL, 1, 5);
 
+-- TODO: fazer com que as queries abaixo usem INSERT .. VALUES explicito ao em vez de SELECTS inteligentes
+-- A fim de garantir previsibilidade e
+
 -- TABELA DISCIPLINA_TURMA
 -- Estratégia: para cada TURMA, seleciona as disciplinas do seu
 -- curso no ciclo exato via JOIN com DISCIPLINA_CURSO.
@@ -3374,11 +3377,11 @@ INSERT INTO DISCIPLINA_TURMA (id_turma, id_disciplina, qt_vagas_disciplina_turma
 SELECT
     t.id_turma,
     dc.id_disciplina,
-    25                                         AS qt_vagas_disciplina_turma,
-    MOD(dc.id_disciplina - 1, 20) + 1          AS id_professor
+    25 AS qt_vagas_disciplina_turma,
+    MOD(dc.id_disciplina - 1, 20) + 1 AS id_professor
 FROM TURMA t
 JOIN DISCIPLINA_CURSO dc
-    ON  dc.id_curso                 = t.id_curso
+    ON  dc.id_curso = t.id_curso
     AND dc.id_ciclo_disciplina_curso = t.id_ciclo_turma
 ORDER BY t.id_turma, dc.id_disciplina;
 
@@ -3489,3 +3492,22 @@ FROM (
     JOIN turma t ON dt.id_turma = t.id_turma
     WHERE t.dt_fim_turma IS NULL
 ) dados;
+
+-- TABELA AVALIACAO_RESULTADO
+
+INSERT INTO avaliacao_resultado (
+    id_avaliacao,
+    id_matricula,
+    qt_nota_avaliacao_aluno
+)
+SELECT
+    a.id_avaliacao,
+    m.id_matricula,
+    -- CÁLCULO DA DISTRIBUIÇÃO NORMAL (Média de 3 sorteios uniformes):
+    ROUND(
+        3 + ( ( (DBMS_RANDOM.VALUE(0, 1) + DBMS_RANDOM.VALUE(0, 1) + DBMS_RANDOM.VALUE(0, 1)) / 3 ) * 7 ),
+        2
+    ) AS qt_nota_avaliacao_aluno
+FROM avaliacao a
+JOIN disciplina_turma dt ON a.id_turma = dt.id_turma AND a.id_disciplina = dt.id_disciplina
+JOIN matricula m         ON dt.id_turma = m.id_turma AND dt.id_disciplina = m.id_disciplina;
