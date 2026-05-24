@@ -33,7 +33,7 @@ Table CURSO {
 
 Table DISCIPLINA {
   id_disciplina INTEGER [pk, increment]
-  sg_disciplina CHAR(10) [not null]
+  sg_disciplina CHAR(16) [not null]
   nm_disciplina VARCHAR(255) [not null]
   ds_disciplina VARCHAR(255)
   qt_carga_horaria_disciplina NUMBER(4) [not null]
@@ -41,14 +41,21 @@ Table DISCIPLINA {
   dt_desativacao_disciplina DATE
 }
 
-Table DISCIPLINA_CURSO {
-  id_disciplina INTEGER [ref: > DISCIPLINA.id_disciplina]
-  id_curso INTEGER [ref: > CURSO.id_curso]
-  id_ciclo_disciplina_curso NUMBER(2) [not null]
-  indexes {
-    (id_disciplina, id_curso) [pk]
+Table OFERTA {
+  id_oferta INTEGER [pk]
+  cd_sala_oferta VARCHAR(20) [not null]
+  dd_semana_oferta CHAR(3) [not null]
+  hr_inicio_oferta NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
+  hr_fim_oferta NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
+  id_disciplina INTEGER [not null]
+  id_turma INTEGER [not null]
+  
+  checks {
+    `dd_semana_oferta_turma IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'chk_dia_semana']
   }
 }
+
+Ref: DISCIPLINA_TURMA.(id_turma,id_disciplina) > OFERTA.(id_turma,id_disciplina)
 
 Table TURMA {
   id_turma INTEGER [pk]
@@ -82,23 +89,6 @@ Table MATRICULA {
 Ref: MATRICULA.(id_turma, id_disciplina)
     > DISCIPLINA_TURMA.(id_turma, id_disciplina)
 
-Table OFERTA {
-  id_oferta INTEGER [pk]
-  cd_sala_oferta VARCHAR(20) [not null]
-  dd_semana_oferta CHAR(3) [not null]
-  hr_inicio_oferta NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
-  hr_fim_oferta NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
-
-  id_turma INTEGER [not null]
-  id_disciplina INTEGER [not null]
-
-  checks {
-    `dd_semana_oferta IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'chk_dia_semana']
-  }
-}
-Ref: OFERTA.(id_turma, id_disciplina)
-    > DISCIPLINA_TURMA.(id_turma, id_disciplina)
-
 Table AVALIACAO {
   id_avaliacao INTEGER [pk]
 
@@ -115,8 +105,8 @@ Ref: AVALIACAO.(id_turma, id_disciplina)
     > DISCIPLINA_TURMA.(id_turma, id_disciplina)
 
 Table REGISTRO_AULA {
-  dt_registro_aula DATE [check: `dt_registro_aula=TRUNC(dt_registro_aula)`]
-  id_oferta INTEGER [ref: > OFERTA.id_oferta]
+  dt_registro_aula DATE [not null, check: `dt_registro_aula=TRUNC(dt_registro_aula)`]
+  id_oferta INTEGER [not null, ref: > OFERTA.id_oferta]
 
   indexes {
     (dt_registro_aula, id_oferta) [pk]
@@ -124,8 +114,8 @@ Table REGISTRO_AULA {
 }
 
 Table AVALIACAO_RESULTADO {
-  id_avaliacao INTEGER [ref: > AVALIACAO.id_avaliacao]
-  id_matricula INTEGER [ref: > MATRICULA.id_matricula]
+  id_avaliacao INTEGER [not null, ref: > AVALIACAO.id_avaliacao]
+  id_matricula INTEGER [not null, ref: > MATRICULA.id_matricula]
   qt_nota_avaliacao_aluno NUMBER(4,2) [not null]
 
   indexes {
@@ -134,8 +124,8 @@ Table AVALIACAO_RESULTADO {
 }
 
 Table ALUNO_REGISTRO_AULA {
-  dt_registro_aula DATE
-  id_oferta INTEGER
+  dt_registro_aula DATE [not null]
+  id_oferta INTEGER [not null]
   id_matricula INTEGER [ref: > MATRICULA.id_matricula]
 
   indexes {
@@ -144,3 +134,4 @@ Table ALUNO_REGISTRO_AULA {
 }
 Ref: ALUNO_REGISTRO_AULA.(dt_registro_aula, id_oferta)
     > REGISTRO_AULA.(dt_registro_aula, id_oferta)
+
