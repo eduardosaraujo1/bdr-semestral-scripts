@@ -477,7 +477,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Srta. Ayla Camargo', '75148396237', TO_DATE('1981-08-25', 'YYYY-MM-DD'), 'brunanunes@yahoo.com.br', 'Estação Vargas, 7, João Alfredo, 74212-309 Albuquerque dos Dourados / PR', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Ísis Abreu', '97314856273', TO_DATE('1982-09-05', 'YYYY-MM-DD'), 'da-cruzagatha@bol.com.br', 'Distrito Araújo, Vila Da Paz, 02099-451 Caldeira / PA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Isis Abreu', '97314856273', TO_DATE('1982-09-05', 'YYYY-MM-DD'), 'da-cruzagatha@bol.com.br', 'Distrito Araújo, Vila Da Paz, 02099-451 Caldeira / PA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Enrico Rocha', '48235970600', TO_DATE('2002-08-30', 'YYYY-MM-DD'), 'emilly61@outlook.com.br', 'Conjunto Joaquim Sales, 95, Nova Cintra, 39019817 Lima Alegre / GO', 2);
@@ -1290,7 +1290,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Luísa Lima', '12973560470', TO_DATE('2002-11-14', 'YYYY-MM-DD'), 'fernandaaparecida@bol.com.br', 'Viela Marina da Conceição, 21, Conjunto Jatoba, 29907756 Santos / PE', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Sra. Ísis Caldeira', '67023458956', TO_DATE('1982-11-27', 'YYYY-MM-DD'), 'maria-laura68@uol.com.br', 'Esplanada Borges, Sport Club, 37858471 Pacheco / PA', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Sra. Isis Caldeira', '67023458956', TO_DATE('1982-11-27', 'YYYY-MM-DD'), 'maria-laura68@uol.com.br', 'Esplanada Borges, Sport Club, 37858471 Pacheco / PA', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Asafe da Conceição', '32415906743', TO_DATE('1995-03-03', 'YYYY-MM-DD'), 'camargosabrina@bol.com.br', 'Largo da Cruz, 43, Vila Engenho Nogueira, 77312-688 Casa Grande / RO', 1);
@@ -1410,7 +1410,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Dra. Vitória Pastor', '95714863291', TO_DATE('1985-05-14', 'YYYY-MM-DD'), 'uda-mota@bol.com.br', 'Estrada Guerra, 96, Piratininga, 91203818 Gonçalves de Rezende / RJ', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Dra. Catarina Aragão', '82361509768', TO_DATE('1987-05-18', 'YYYY-MM-DD'), 'fernandessabrina@icloud.com', 'Loteamento Ísis Carvalho, 70, Santa Cruz, 23182971 Silveira da Prata / AP', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Dra. Catarina Aragão', '82361509768', TO_DATE('1987-05-18', 'YYYY-MM-DD'), 'fernandessabrina@icloud.com', 'Loteamento Isis Carvalho, 70, Santa Cruz, 23182971 Silveira da Prata / AP', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Sra. NatAlia Cavalcante', '45076892365', TO_DATE('1982-10-19', 'YYYY-MM-DD'), 'enricobarros@uol.com.br', 'Praia Viana, 150, Vila Nova Gameleira 2ª Seção, 55618444 Barros / PI', 1);
@@ -1791,7 +1791,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Gustavo das Neves', '98276153437', TO_DATE('1998-08-05', 'YYYY-MM-DD'), 'teixeiralivia@bol.com.br', 'Alameda de Macedo, 37, Vila Santo Antônio Barroquinha, 69417-996 Almeida de Novais / AC', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'NatAlia das Neves', '74598621346', TO_DATE('1982-07-23', 'YYYY-MM-DD'), 'mirellada-rosa@hotmail.com', 'Lago Marques, 753, Vila Paquetá, 64980445 Vieira / RN', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Natalia das Neves', '74598621346', TO_DATE('1982-07-23', 'YYYY-MM-DD'), 'mirellada-rosa@hotmail.com', 'Lago Marques, 753, Vila Paquetá, 64980445 Vieira / RN', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Théo Gonçalves', '05296138406', TO_DATE('1981-07-04', 'YYYY-MM-DD'), 'jda-rocha@gmail.com', 'Estação de da Mata, 945, Califórnia, 08898305 das Neves de Rios / TO', 1);
@@ -1840,7 +1840,7 @@ INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_profe
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Eduardo Viana Lopes', '12345678913', 'eduardo.lopes@fatec.edu.br', 'Desenvolvimento Web', TO_DATE('2020-08-14', 'YYYY-MM-DD'));
 
 INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
-VALUES (SQ_PROFESSOR.NEXTVAL, 'Simone Cristina Prado', '12345678914', 'simone.prado@fatec.edu.br', 'MatemAtica Aplicada', TO_DATE('2017-03-27', 'YYYY-MM-DD'));
+VALUES (SQ_PROFESSOR.NEXTVAL, 'Simone Cristina Prado', '12345678914', 'simone.prado@fatec.edu.br', 'Matematica Aplicada', TO_DATE('2017-03-27', 'YYYY-MM-DD'));
 
 INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Marcelo Augusto Teixeira', '12345678915', 'marcelo.teixeira@fatec.edu.br', 'Sistemas Operacionais', TO_DATE('2016-09-12', 'YYYY-MM-DD'));
@@ -1863,7 +1863,7 @@ VALUES (SQ_PROFESSOR.NEXTVAL, 'Aline Martins Gonçalves', '12345678920', 'aline.
 
 -- TABELA CURSO
 INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_carga_horaria_curso, qt_semestre_curso, cd_modalidade_curso, dt_ativacao_curso)
-VALUES (SQ_CURSO.NEXTVAL, 'ADS', 'AnAlise e Desenvolvimento de Sistemas', 'Curso superior de tecnologia focado em desenvolvimento de software e sistemas computacionais.', 1, 2400, 6, 1, TRUNC(SYSDATE));
+VALUES (SQ_CURSO.NEXTVAL, 'ADS', 'Analise e Desenvolvimento de Sistemas', 'Curso superior de tecnologia focado em desenvolvimento de software e sistemas computacionais.', 1, 2400, 6, 1, TRUNC(SYSDATE));
 
 INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_carga_horaria_curso, qt_semestre_curso, cd_modalidade_curso, dt_ativacao_curso)
 VALUES (SQ_CURSO.NEXTVAL, 'COMEX', 'Comércio Exterior', 'Curso voltado para operações comerciais internacionais e logística.', 1, 2400, 6, 1, TRUNC(SYSDATE));
@@ -2050,7 +2050,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESFIN57', 'Gestão Financeira', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LOGÍSTI58', 'Logística', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'LOGISTI58', 'Logística', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'MODTRAS59', 'Modais de Transporte e Seguro de Carga', 80, TRUNC(SYSDATE));
@@ -2110,7 +2110,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROCOME77', 'Projeto em Comércio Exterior V', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TÉCNEGI78', 'Técnicas de Negociação Internacional', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECNEGI78', 'Técnicas de Negociação Internacional', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESDIG79', 'Design Digital', 80, TRUNC(SYSDATE));
@@ -2122,7 +2122,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISOPER81', 'Sistemas Operacionais e Redes de Computadores', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TÉCPRO82', 'Técnicas de Programação I', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECPRO82', 'Técnicas de Programação I', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESWEB83', 'Desenvolvimento Web II', 80, TRUNC(SYSDATE));
@@ -2182,7 +2182,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'LABDESM101', 'Laboratório de Desenvolvimento Multiplataforma', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ÉTIPROP102', 'Ética Profissional e Patentes', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'ETIPROP102', 'Etica Profissional e Patentes', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTG103', 'Projeto Integrador em Gestão Empresarial I', 80, TRUNC(SYSDATE));
@@ -2224,7 +2224,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESMAR115', 'Gestão de Marketing', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISMÉT116', 'Organização, Sistemas e Métodos', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISMET116', 'Organização, Sistemas e Métodos', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISINF117', 'Sistemas de Informação', 80, TRUNC(SYSDATE));
@@ -2278,31 +2278,31 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECINF133', 'Tecnologia da Informação', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUÍGERE134', 'Química Geral e Experimental', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIGERE134', 'Química Geral e Experimental', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUÍINO135', 'Química Inorgânica', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIINO135', 'Química Inorgânica', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'FÍSICA136', 'Física', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'FISICA136', 'Física', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'FUNMATC137', 'Fundamentos de MatemAtica para Cálculo', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'FUNMATC137', 'Fundamentos de Matematica para Cálculo', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESAMB138', 'Gestão Ambiental', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESTÉCA139', 'Desenho Técnico Assistido por Computador', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESTECA139', 'Desenho Técnico Assistido por Computador', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUÍORG140', 'Química Orgânica', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIORG140', 'Química Orgânica', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'DISC141', 'Físico-Química', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUÍANA142', 'Química Analítica', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIANA142', 'Química Analítica', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'CALCULO143', 'Cálculo', 80, TRUNC(SYSDATE));
@@ -2332,7 +2332,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'OPEUNI151', 'Operações UnitArias I', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUÍMEIA152', 'Química do Meio Ambiente', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIMEIA152', 'Química do Meio Ambiente', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'BIOTECD153', 'Bioquímica e Tecnologia das Fermentações', 80, TRUNC(SYSDATE));
@@ -2344,13 +2344,13 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESTDES155', 'Estatística Descritiva', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'OPEUNI156', 'Operações UnitArias II', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'OPEUNI156', 'Operações Unitarias II', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'CORROSÃ157', 'Corrosão', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'CORROSA157', 'Corrosão', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROQUÍ158', 'Processos Químicos I', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROQUI158', 'Processos Químicos I', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'CONGARQ159', 'Controle e Garantia da Qualidade', 80, TRUNC(SYSDATE));
@@ -2386,659 +2386,9 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'INSIND169', 'Instrumentação Industrial', 80, TRUNC(SYSDATE));
 
 
--- TABELA DISCIPLINA_CURSO
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (1, 1, 1);
+-- TABELA TURMA (apenas 2023/1)
 
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (2, 1, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (3, 1, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (4, 1, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (5, 1, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (6, 1, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (7, 1, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (8, 1, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (9, 1, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (10, 1, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (11, 1, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (12, 1, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (13, 1, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (14, 1, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (15, 1, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (16, 1, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (17, 1, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (18, 1, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (19, 1, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (20, 1, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (21, 1, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (22, 1, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (23, 1, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (24, 1, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (25, 1, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (26, 1, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (27, 1, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (28, 1, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (29, 1, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (30, 1, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (31, 1, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (32, 1, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (33, 1, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (34, 1, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (35, 1, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (36, 1, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (37, 1, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (38, 1, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (39, 1, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (40, 1, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (41, 1, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (42, 1, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (43, 2, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (44, 2, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (5, 2, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (45, 2, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (7, 2, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (46, 2, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (47, 2, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (48, 2, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (49, 2, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (50, 2, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (51, 2, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (52, 2, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (14, 2, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (53, 2, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (54, 2, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (55, 2, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (56, 2, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (57, 2, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (21, 2, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (58, 2, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (59, 2, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (60, 2, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (61, 2, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (62, 2, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (28, 2, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (63, 2, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (64, 2, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (65, 2, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (66, 2, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (67, 2, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (68, 2, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (69, 2, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (35, 2, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (70, 2, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (71, 2, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (72, 2, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (73, 2, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (74, 2, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (75, 2, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (42, 2, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (76, 2, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (77, 2, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (78, 2, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (2, 3, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (10, 3, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (79, 3, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (1, 3, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (80, 3, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (81, 3, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (82, 3, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (83, 3, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (84, 3, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (8, 3, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (11, 3, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (23, 3, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (85, 3, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (86, 3, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (87, 3, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (88, 3, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (89, 3, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (26, 3, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (7, 3, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (90, 3, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (91, 3, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (92, 3, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (25, 3, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (24, 3, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (93, 3, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (14, 3, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (37, 3, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (94, 3, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (95, 3, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (96, 3, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (97, 3, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (98, 3, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (21, 3, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (99, 3, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (100, 3, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (101, 3, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (33, 3, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (29, 3, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (102, 3, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (28, 3, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (103, 4, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (43, 4, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (104, 4, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (105, 4, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (106, 4, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (107, 4, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (5, 4, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (7, 4, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (108, 4, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (109, 4, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (110, 4, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (111, 4, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (47, 4, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (51, 4, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (112, 4, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (14, 4, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (113, 4, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (114, 4, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (115, 4, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (116, 4, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (117, 4, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (118, 4, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (21, 4, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (119, 4, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (57, 4, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (120, 4, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (58, 4, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (121, 4, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (122, 4, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (28, 4, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (123, 4, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (124, 4, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (15, 4, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (125, 4, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (126, 4, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (127, 4, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (56, 4, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (35, 4, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (128, 4, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (129, 4, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (130, 4, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (131, 4, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (132, 4, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (61, 4, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (42, 4, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (133, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (134, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (135, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (136, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (137, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (138, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (5, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (56, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (7, 5, 1);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (139, 5, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (140, 5, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (141, 5, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (142, 5, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (143, 5, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (61, 5, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (14, 5, 2);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (144, 5, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (145, 5, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (146, 5, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (147, 5, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (148, 5, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (149, 5, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (150, 5, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (21, 5, 3);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (151, 5, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (152, 5, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (153, 5, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (154, 5, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (47, 5, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (155, 5, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (28, 5, 4);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (156, 5, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (157, 5, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (158, 5, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (159, 5, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (160, 5, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (161, 5, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (35, 5, 5);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (162, 5, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (163, 5, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (164, 5, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (165, 5, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (166, 5, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (167, 5, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (168, 5, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (169, 5, 6);
-
-INSERT INTO DISCIPLINA_CURSO (id_disciplina, id_curso, id_ciclo_disciplina_curso)
-VALUES (42, 5, 6);
-
--- TABELA TURMA
+-- Turmas 2023/1
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 1, 1);
 
@@ -3054,80 +2404,19 @@ VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 1, 5);
 
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 2, 1);
+-- Ofertas para 2023/1
+--
 
+-- Turmas 2023/2 - graduação das anteriores e novas
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 2, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 2, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 2, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 2, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 3, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 3, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 3, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 3, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 3, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 4, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 4, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 4, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 4, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 4, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 5, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 5, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 5, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 5, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 5, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 6, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 6, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 6, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 6, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 6, 5);
+SELECT
+    SQ_TURMA.NEXTVAL,
+    TO_DATE('2023-06-01', 'YYYY-MM-DD'),
+    TO_DATE('2023-12-20', 'YYYY-MM-DD'),
+    id_ciclo_turma + 1,
+    id_curso
+FROM TURMA
+WHERE id_ciclo_turma < 6;
 
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 1, 1);
@@ -3144,65 +2433,16 @@ VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 1, 5);
 
+-- Turmas 2024/1 - graduação das anteriores e novas
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 2, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 2, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 2, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 2, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 2, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 3, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 3, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 3, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 3, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 3, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 4, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 4, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 4, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 4, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 4, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 5, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 5, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 5, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 5, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-06-01', 'YYYY-MM-DD'), TO_DATE('2023-12-20', 'YYYY-MM-DD'), 5, 5);
+SELECT
+    SQ_TURMA.NEXTVAL,
+    TO_DATE('2024-01-01', 'YYYY-MM-DD'),
+    TO_DATE('2024-06-30', 'YYYY-MM-DD'),
+    id_ciclo_turma + 1,
+    id_curso
+FROM TURMA
+WHERE id_ciclo_turma < 6;
 
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 1, 1);
@@ -3219,50 +2459,16 @@ VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 1, 5);
 
+-- Turmas 2023/2 - graduação das anteriores e novas
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 2, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 2, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 2, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 2, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 2, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 3, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 3, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 3, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 3, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 3, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 4, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 4, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 4, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 4, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('2024-06-30', 'YYYY-MM-DD'), 4, 5);
+SELECT
+    SQ_TURMA.NEXTVAL,
+    TO_DATE('2024-06-01', 'YYYY-MM-DD'),
+    TO_DATE('2024-12-20', 'YYYY-MM-DD'),
+    id_ciclo_turma + 1,
+    id_curso
+FROM TURMA
+WHERE id_ciclo_turma < 6;
 
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 1, 1);
@@ -3279,234 +2485,4 @@ VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 1, 5);
 
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 2, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 2, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 2, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 2, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 2, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 3, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 3, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 3, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 3, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2024-06-01', 'YYYY-MM-DD'), TO_DATE('2024-12-20', 'YYYY-MM-DD'), 3, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 1, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 1, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 1, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 1, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 1, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 2, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 2, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 2, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 2, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 2, 5);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-06-01', 'YYYY-MM-DD'), NULL, 1, 1);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-06-01', 'YYYY-MM-DD'), NULL, 1, 2);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-06-01', 'YYYY-MM-DD'), NULL, 1, 3);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-06-01', 'YYYY-MM-DD'), NULL, 1, 4);
-
-INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
-VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2025-06-01', 'YYYY-MM-DD'), NULL, 1, 5);
-
--- TODO: fazer com que as queries abaixo usem INSERT .. VALUES explicito ao em vez de SELECTS inteligentes
--- A fim de garantir previsibilidade e
-
--- TABELA DISCIPLINA_TURMA
--- Estratégia: para cada TURMA, seleciona as disciplinas do seu
--- curso no ciclo exato via JOIN com DISCIPLINA_CURSO.
---
--- Atribuição de professor:
---   MOD(id_disciplina - 1, 20) + 1
---   → distribui deterministicamente entre os 20 professores,
---     garantindo que cada id_disciplina sempre caia no mesmo
---     professor (efeito de hash estAvel).
---   Exemplos:
---     disc  1 → prof  1  |  disc 20 → prof 20
---     disc 21 → prof  1  |  disc 41 → prof  1
---
--- qt_vagas_disciplina_turma: literal 25 para todas as turmas.
--- ============================================================
-
-INSERT INTO DISCIPLINA_TURMA (id_turma, id_disciplina, qt_vagas_disciplina_turma, id_professor)
-SELECT
-    t.id_turma,
-    dc.id_disciplina,
-    25 AS qt_vagas_disciplina_turma,
-    MOD(dc.id_disciplina - 1, 20) + 1 AS id_professor
-FROM TURMA t
-JOIN DISCIPLINA_CURSO dc
-    ON  dc.id_curso = t.id_curso
-    AND dc.id_ciclo_disciplina_curso = t.id_ciclo_turma
-ORDER BY t.id_turma, dc.id_disciplina;
-
-COMMIT;
-
--- TABELA MATRICULA
--- Estratégia: para cada linha de DISCIPLINA_TURMA, gera 20
--- alunos via CROSS JOIN com a série 1..20 (CONNECT BY LEVEL).
---
--- Mapeamento turma → grupo de alunos:
---   grupo_idx     = MOD(id_turma - 1, 30)          -- cicla a cada 30 turmas
---   id_aluno_base = grupo_idx * 20                  -- primeiro aluno - 1
---   id_aluno      = id_aluno_base + n   (n = 1..20)
---
--- Exemplos:
---   turma  1 → grupo  0 → alunos   1-20  (ADS  2023/01, ciclo 1)
---   turma  2 → grupo  1 → alunos  21-40  (COMEX 2023/01, ciclo 1)
---   turma 30 → grupo 29 → alunos 581-600 (PQ   2023/01, ciclo 6)
---   turma 31 → grupo  0 → alunos   1-20  (ADS  2023/06, ciclo 1) ← mesmo curso!
---   turma 32 → grupo  1 → alunos  21-40  (COMEX 2023/06, ciclo 1) ← mesmo curso!
---
--- Consistência garantida: a janela de 30 abrange exatamente
--- 6 ciclos × 5 cursos, portanto ao reiniciar o grupo o curso
--- correspondente se repete na mesma posição.
---
--- id_matricula: gerado via sequence SQ_MATRICULA.NEXTVAL.
--- ============================================================
-
-INSERT INTO MATRICULA (id_matricula, id_turma, id_disciplina, id_aluno)
-SELECT
-    SQ_MATRICULA.NEXTVAL,
-    dados.id_turma,
-    dados.id_disciplina,
-    dados.id_aluno
-FROM (
-    SELECT
-        dt.id_turma,
-        dt.id_disciplina,
-        (MOD(dt.id_turma - 1, 30) * 20) + n.n AS id_aluno
-    FROM DISCIPLINA_TURMA dt
-    CROSS JOIN (
-        SELECT LEVEL AS n
-        FROM DUAL
-        CONNECT BY LEVEL <= 20
-    ) n
-    ORDER BY dt.id_turma, dt.id_disciplina, n.n
-) dados;
-
--- TABELA AVALIACAO
-INSERT INTO avaliacao (
-    id_avaliacao,
-    ds_avaliacao,
-    qt_peso_avaliacao,
-    qt_nota_maxima_avaliacao,
-    dt_hr_avaliacao,
-    cd_tipo_avaliacao,
-    id_turma,
-    id_disciplina
-)
-SELECT
-    SQ_AVALIACAO.NEXTVAL,
-    regra.ds_fixa,
-    1 as qt_peso_avaliacao,
-    10 as qt_nota_maxima_avaliacao,
-    -- Adiciona 2 meses e define o horário para 16:00 (16/24 do dia)
-    ADD_MONTHS(TRUNC(t.dt_inicio_turma), 2) + (9/24) + (TRUNC(DBMS_RANDOM.VALUE(1, 15)) * 50) / (24 * 60) as dt_hr_avaliacao,
-    regra.cd_fixo,
-    dt.id_turma,
-    dt.id_disciplina
-FROM disciplina_turma dt
-JOIN turma t ON dt.id_turma = t.id_turma
--- CROSS JOIN cria a matriz de 3 linhas fixas para cada registro do SELECT principal
-CROSS JOIN (
-    SELECT '(P1) Primeira prova avaliativa do semestre' AS ds_fixa, 0 AS cd_fixo FROM dual
-    UNION ALL
-    SELECT '(P2) Segunda prova avaliativa do semestre' AS ds_fixa, 0 AS cd_fixo FROM dual
-    UNION ALL
-    SELECT 'Atividade avaliativa realizada no semestre' AS ds_fixa, 1 AS cd_fixo FROM dual
-) regra
-WHERE t.dt_fim_turma IS NOT NULL;
-
-INSERT INTO avaliacao (
-    id_avaliacao,
-    ds_avaliacao,
-    qt_peso_avaliacao,
-    qt_nota_maxima_avaliacao,
-    dt_hr_avaliacao,
-    cd_tipo_avaliacao,
-    id_turma,
-    id_disciplina
-)
-SELECT
-    SQ_AVALIACAO.NEXTVAL,
-    '(P1) Primeira prova avaliativa do semestre',
-    1,
-    10,
-    ADD_MONTHS(TRUNC(dados.dt_inicio_turma), 2) + (9/24) + (TRUNC(DBMS_RANDOM.VALUE(1, 15)) * 50) / (24 * 60),
-    0,
-    dados.id_turma,
-    dados.id_disciplina
-FROM (
-    -- Subquery para ordenar e limitar os primeiros 50 registros
-    SELECT
-        dt.id_turma,
-        dt.id_disciplina,
-        t.dt_inicio_turma
-    FROM disciplina_turma dt
-    JOIN turma t ON dt.id_turma = t.id_turma
-    WHERE t.dt_fim_turma IS NULL
-) dados;
-
--- TABELA AVALIACAO_RESULTADO
-INSERT INTO avaliacao_resultado (
-    id_avaliacao,
-    id_matricula,
-    qt_nota_avaliacao_aluno
-)
-SELECT
-    a.id_avaliacao,
-    m.id_matricula,
-    -- CÁLCULO DA DISTRIBUIÇÃO NORMAL (Média de 3 sorteios uniformes):
-    ROUND(
-        3 + ( ( (DBMS_RANDOM.VALUE(0, 1) + DBMS_RANDOM.VALUE(0, 1) + DBMS_RANDOM.VALUE(0, 1)) / 3 ) * 7 ),
-        2
-    ) AS qt_nota_avaliacao_aluno
-FROM avaliacao a
-JOIN disciplina_turma dt ON a.id_turma = dt.id_turma AND a.id_disciplina = dt.id_disciplina
-JOIN matricula m         ON dt.id_turma = m.id_turma AND dt.id_disciplina = m.id_disciplina;
+-- OFERTAS
