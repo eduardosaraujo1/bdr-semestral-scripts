@@ -21,13 +21,13 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Beatriz Araújo', '65179830400', TO_DATE('1985-09-11', 'YYYY-MM-DD'), 'eda-cruz@live.com', 'Setor de Albuquerque, Buraco Quente, 26773602 Abreu das Flores / GO', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Laura Lima', '87219605340', TO_DATE('2002-01-24', 'YYYY-MM-DD'), 'aragaomaria-liz@icloud.com', 'ChAcara de Cirino, Betânia, 36193990 Leão / RO', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Laura Lima', '87219605340', TO_DATE('2002-01-24', 'YYYY-MM-DD'), 'aragaomaria-liz@icloud.com', 'Chacara de Cirino, Betânia, 36193990 Leão / RO', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Stephany Dias', '43512867928', TO_DATE('1993-08-19', 'YYYY-MM-DD'), 'albuquerquemaria-cecilia@hotmail.com', 'Rodovia da Luz, 25, Santo Antônio, 54278498 Rios / TO', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Letícia Ribeiro', '12406793869', TO_DATE('1997-11-30', 'YYYY-MM-DD'), 'nicolas48@live.com', 'ChAcara Porto, 14, Acaba Mundo, 24278-680 Barbosa / RR', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Letícia Ribeiro', '12406793869', TO_DATE('1997-11-30', 'YYYY-MM-DD'), 'nicolas48@live.com', 'Chacara Porto, 14, Acaba Mundo, 24278-680 Barbosa / RR', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Yago Andrade', '58231079432', TO_DATE('2006-06-11', 'YYYY-MM-DD'), 'theorios@hotmail.com', 'PAtio de Pinto, 33, Virgínia, 60256342 Garcia / AL', 2);
@@ -48,7 +48,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Sr. Davi Miguel Cassiano', '36251098759', TO_DATE('1996-02-10', 'YYYY-MM-DD'), 'naraujo@outlook.com.br', 'Vila de Almeida, 167, Maria Goretti, 66889-373 Lopes do Amparo / AC', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Maitê Rios', '62714509380', TO_DATE('1982-10-23', 'YYYY-MM-DD'), 'dcarvalho@yahoo.com.br', 'Largo OtAvio Marques, 75, Itatiaia, 41708-053 Vasconcelos / RS', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Maitê Rios', '62714509380', TO_DATE('1982-10-23', 'YYYY-MM-DD'), 'dcarvalho@yahoo.com.br', 'Largo Otavio Marques, 75, Itatiaia, 41708-053 Vasconcelos / RS', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Arthur da Cruz', '30216987431', TO_DATE('1993-11-10', 'YYYY-MM-DD'), 'emilly29@hotmail.com', 'Trecho Alves, 79, Nazare, 19314919 Ferreira / PI', 2);
@@ -132,7 +132,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Juan Viana', '18052496306', TO_DATE('1984-11-05', 'YYYY-MM-DD'), 'lucassilveira@live.com', 'Viela Renan Macedo, 447, São João Batista, 47359774 Montenegro do Galho / PA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Guilherme Pereira', '24053978629', TO_DATE('1988-08-22', 'YYYY-MM-DD'), 'yagomachado@icloud.com', 'ChAcara Pedro Miguel Machado, 70, Barão Homem De Melo 2ª Seção, 85361-530 Brito Alegre / SE', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Guilherme Pereira', '24053978629', TO_DATE('1988-08-22', 'YYYY-MM-DD'), 'yagomachado@icloud.com', 'Chacara Pedro Miguel Machado, 70, Barão Homem De Melo 2ª Seção, 85361-530 Brito Alegre / SE', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Davi Miguel Andrade', '47265398092', TO_DATE('2006-08-23', 'YYYY-MM-DD'), 'da-cunhapedro@yahoo.com.br', 'Feira Ana Julia Campos, Bairro Das Indústrias Ii, 69711798 Pires / PE', 2);
@@ -156,7 +156,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Aurora Azevedo', '46793508148', TO_DATE('1999-01-01', 'YYYY-MM-DD'), 'rmartins@icloud.com', 'Vereda de Pastor, 72, Santa Rita, 18242253 Moreira da Mata / AP', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Gael Henrique Porto', '84257906383', TO_DATE('1997-07-15', 'YYYY-MM-DD'), 'luigiribeiro@terra.com.br', 'ChAcara Aparecida, 743, Vila Antena Montanhês, 78447364 Barbosa de Sales / AL', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Gael Henrique Porto', '84257906383', TO_DATE('1997-07-15', 'YYYY-MM-DD'), 'luigiribeiro@terra.com.br', 'Chacara Aparecida, 743, Vila Antena Montanhês, 78447364 Barbosa de Sales / AL', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Pedro Lucas Leão', '79324168509', TO_DATE('2001-08-31', 'YYYY-MM-DD'), 'isabelly25@icloud.com', 'Quadra Campos, 47, Comiteco, 04696325 Correia da Serra / PR', 2);
@@ -180,7 +180,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Cecilia Abreu', '82653714973', TO_DATE('1988-08-26', 'YYYY-MM-DD'), 'vargasfelipe@uol.com.br', 'Estação Brayan Gonçalves, 52, Vila Paris, 04991547 Carvalho de Montenegro / PB', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Gael Camargo', '52798106494', TO_DATE('2003-04-22', 'YYYY-MM-DD'), 'luiz-fernandopimenta@outlook.com.br', 'ChAcara Isadora Rios, 3, Colégio Batista, 53046-374 da Rosa Verde / SC', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Gael Camargo', '52798106494', TO_DATE('2003-04-22', 'YYYY-MM-DD'), 'luiz-fernandopimenta@outlook.com.br', 'Chacara Isadora Rios, 3, Colégio Batista, 53046-374 da Rosa Verde / SC', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Alexia da Luz', '53097826130', TO_DATE('2000-04-08', 'YYYY-MM-DD'), 'isaac45@uol.com.br', 'Distrito Maria Souza, 956, Savassi, 83391-878 Barbosa Verde / AM', 2);
@@ -228,7 +228,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Mariah Nogueira', '05197284676', TO_DATE('1996-09-15', 'YYYY-MM-DD'), 'vsa@outlook.com.br', 'Jardim Câmara, Santana Do Cafezal, 75679825 Mendes / AM', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Oliver Barros', '12586397428', TO_DATE('1990-06-23', 'YYYY-MM-DD'), 'macedomarcela@terra.com.br', 'Condomínio Almeida, 31, FuncionArios, 82825867 Guerra / RS', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Oliver Barros', '12586397428', TO_DATE('1990-06-23', 'YYYY-MM-DD'), 'macedomarcela@terra.com.br', 'Condomínio Almeida, 31, Funcionarios, 82825867 Guerra / RS', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Francisco Porto', '69054132833', TO_DATE('1991-08-26', 'YYYY-MM-DD'), 'noahda-mota@hotmail.com', 'Estação de Fonseca, 83, Canaa, 78596-969 Ferreira / MS', 2);
@@ -237,10 +237,10 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Emanuella Rocha', '41270865307', TO_DATE('1991-03-15', 'YYYY-MM-DD'), 'ninagomes@outlook.com.br', 'Praça Marcelo Mendonça, 328, Santa Cecilia, 22579-050 Carvalho de Correia / TO', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Sofia Rezende', '76935840210', TO_DATE('1996-10-08', 'YYYY-MM-DD'), 'anaandrade@bol.com.br', 'Esplanada Maria Cecília Nunes, 98, Camponesa 2ª Seção, 48580783 Caldeira de GoiAs / MA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Sofia Rezende', '76935840210', TO_DATE('1996-10-08', 'YYYY-MM-DD'), 'anaandrade@bol.com.br', 'Esplanada Maria Cecília Nunes, 98, Camponesa 2ª Seção, 48580783 Caldeira de Goias / MA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Rael da Luz', '51760842362', TO_DATE('2005-05-06', 'YYYY-MM-DD'), 'ncavalcante@yahoo.com.br', 'Avenida Nunes, 58, UniversitArio, 54494812 Araújo Paulista / RS', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Rael da Luz', '51760842362', TO_DATE('2005-05-06', 'YYYY-MM-DD'), 'ncavalcante@yahoo.com.br', 'Avenida Nunes, 58, Universitario, 54494812 Araújo Paulista / RS', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Davi Lucca da Cruz', '25368740107', TO_DATE('1998-07-31', 'YYYY-MM-DD'), 'emachado@hotmail.com', 'Ladeira de Sales, 87, Leticia, 17518636 Monteiro / GO', 2);
@@ -249,10 +249,10 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Lucca Novaes', '92768043150', TO_DATE('1980-11-05', 'YYYY-MM-DD'), 'lunnamarques@gmail.com', 'Conjunto de Rezende, 52, Buraco Quente, 41520-643 Rezende de Minas / RR', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Alexandre Cunha', '71248630904', TO_DATE('2000-07-18', 'YYYY-MM-DD'), 'limajoao@live.com', 'ChAcara Gustavo Caldeira, 55, Cinquentenário, 22189-092 Ferreira de Silveira / DF', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Alexandre Cunha', '71248630904', TO_DATE('2000-07-18', 'YYYY-MM-DD'), 'limajoao@live.com', 'Chacara Gustavo Caldeira, 55, Cinquentenário, 22189-092 Ferreira de Silveira / DF', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Clarice Jesus', '97306152416', TO_DATE('1990-07-27', 'YYYY-MM-DD'), 'ydias@yahoo.com.br', 'ChAcara de da Cruz, 599, Vila São Paulo, 43898364 Viana / SE', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Clarice Jesus', '97306152416', TO_DATE('1990-07-27', 'YYYY-MM-DD'), 'ydias@yahoo.com.br', 'Chacara de da Cruz, 599, Vila São Paulo, 43898364 Viana / SE', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Thales Gomes', '13754069225', TO_DATE('1984-03-14', 'YYYY-MM-DD'), 'ifonseca@yahoo.com.br', 'Alameda Pastor, 1, Havaí, 00684866 Barros da Prata / PI', 2);
@@ -363,7 +363,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Ryan Aparecida', '43590712643', TO_DATE('1998-07-22', 'YYYY-MM-DD'), 'paulorodrigues@outlook.com.br', 'Vila de Sousa, 31, Alto Dos Pinheiros, 50110-248 Oliveira / TO', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'José Pedro Jesus', '67932085438', TO_DATE('1995-11-19', 'YYYY-MM-DD'), 'sacaleb@hotmail.com', 'Lago Viana, 29, JaraguA, 66072-832 Vieira da Prata / MA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'José Pedro Jesus', '67932085438', TO_DATE('1995-11-19', 'YYYY-MM-DD'), 'sacaleb@hotmail.com', 'Lago Viana, 29, Jaragua, 66072-832 Vieira da Prata / MA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Cecília da Rosa', '50286937492', TO_DATE('1989-03-18', 'YYYY-MM-DD'), 'otavio68@yahoo.com.br', 'Vale da Cunha, 31, Vila Havaí, 87814141 Silveira / RJ', 2);
@@ -387,7 +387,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Ana Lívia da Conceição', '69208135721', TO_DATE('1985-07-09', 'YYYY-MM-DD'), 'vianasophia@icloud.com', 'Viaduto José Pedro Pereira, São Jorge 3ª Seção, 68650863 Vieira de Vargas / MG', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Sr. OtAvio Carvalho', '47360281571', TO_DATE('1980-07-13', 'YYYY-MM-DD'), 'oliveirarebeca@hotmail.com', 'Favela de Sales, 66, Camargos, 69448695 Rodrigues das Flores / SP', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Sr. Otavio Carvalho', '47360281571', TO_DATE('1980-07-13', 'YYYY-MM-DD'), 'oliveirarebeca@hotmail.com', 'Favela de Sales, 66, Camargos, 69448695 Rodrigues das Flores / SP', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Noah Novaes', '87294531609', TO_DATE('1997-02-15', 'YYYY-MM-DD'), 'isousa@hotmail.com', 'Esplanada de Brito, 78, Vila Sumaré, 89026-012 Peixoto de Lopes / AP', 2);
@@ -537,7 +537,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Isabella Mendonça', '61437905820', TO_DATE('1981-12-31', 'YYYY-MM-DD'), 'guerraisaac@uol.com.br', 'Distrito de Sousa, 131, Vila Paraíso, 70790320 Pires / AL', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Calebe Marques', '92160538442', TO_DATE('1982-03-16', 'YYYY-MM-DD'), 'leticiafernandes@outlook.com.br', 'Travessa de Nogueira, CinquentenArio, 30925-114 Sá / PA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Calebe Marques', '92160538442', TO_DATE('1982-03-16', 'YYYY-MM-DD'), 'leticiafernandes@outlook.com.br', 'Travessa de Nogueira, Cinquentenario, 30925-114 Sá / PA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Léo Novaes', '27340159606', TO_DATE('2002-12-04', 'YYYY-MM-DD'), 'mendoncaenrico@gmail.com', 'Via Pastor, 86, Vila Madre Gertrudes 3ª Seção, 32487632 Peixoto / CE', 2);
@@ -678,7 +678,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Evelyn Vasconcelos', '57189340297', TO_DATE('1982-03-06', 'YYYY-MM-DD'), 'maria-lauracunha@live.com', 'Rua de Guerra, 788, Santa Tereza, 97677-622 Mendonça / RR', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Caroline Santos', '89157340250', TO_DATE('2007-10-02', 'YYYY-MM-DD'), 'isaac96@hotmail.com', 'Lago de Aparecida, 621, JatobA, 44702-296 das Neves / MA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Caroline Santos', '89157340250', TO_DATE('2007-10-02', 'YYYY-MM-DD'), 'isaac96@hotmail.com', 'Lago de Aparecida, 621, Jatoba, 44702-296 das Neves / MA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Fernando Sousa', '70142869511', TO_DATE('1996-12-28', 'YYYY-MM-DD'), 'yfernandes@outlook.com.br', 'Trevo de Cardoso, 88, Vila Santa Rosa, 72519-966 Gonçalves / MT', 2);
@@ -738,10 +738,10 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Maria Júlia Garcia', '36149750884', TO_DATE('1996-11-21', 'YYYY-MM-DD'), 'tporto@hotmail.com', 'Sítio de Cavalcanti, Andiroba, 02316-433 Ribeiro do Galho / AP', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Ana Laura Freitas', '80273519603', TO_DATE('1995-12-07', 'YYYY-MM-DD'), 'esouza@outlook.com.br', 'Lagoa Lopes, 52, Túnel De Ibirité, 87430271 Pereira de GoiAs / PE', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Ana Laura Freitas', '80273519603', TO_DATE('1995-12-07', 'YYYY-MM-DD'), 'esouza@outlook.com.br', 'Lagoa Lopes, 52, Túnel De Ibirité, 87430271 Pereira de Goias / PE', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Raul Martins', '90125364725', TO_DATE('1991-09-19', 'YYYY-MM-DD'), 'kamillyda-cruz@yahoo.com.br', 'Viaduto Luiz OtAvio Sampaio, 116, Frei Leopoldo, 48413768 Freitas / AP', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Raul Martins', '90125364725', TO_DATE('1991-09-19', 'YYYY-MM-DD'), 'kamillyda-cruz@yahoo.com.br', 'Viaduto Luiz Otavio Sampaio, 116, Frei Leopoldo, 48413768 Freitas / AP', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Thiago Vargas', '56712804353', TO_DATE('1982-07-01', 'YYYY-MM-DD'), 'vgarcia@outlook.com.br', 'Aeroporto da Cunha, 3, Leticia, 77118-372 da Mota de Castro / CE', 2);
@@ -765,7 +765,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Isadora da Rosa', '47328061553', TO_DATE('1985-03-28', 'YYYY-MM-DD'), 'glima@outlook.com.br', 'Alameda Giovanna Lima, 5, Unidas, 82467474 Novais do Amparo / AP', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Sr. Ravy Costa', '23074981504', TO_DATE('2007-08-23', 'YYYY-MM-DD'), 'hadassa74@hotmail.com', 'Parque Nunes, Conjunto Jardim Filadélfia, 64587506 Sousa de GoiAs / ES', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Sr. Ravy Costa', '23074981504', TO_DATE('2007-08-23', 'YYYY-MM-DD'), 'hadassa74@hotmail.com', 'Parque Nunes, Conjunto Jardim Filadélfia, 64587506 Sousa de Goias / ES', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Ana Beatriz Fonseca', '02473189579', TO_DATE('1980-09-24', 'YYYY-MM-DD'), 'ramoshadassa@outlook.com.br', 'Praça Cavalcante, 54, Santa Maria, 94611-952 Souza do Oeste / SC', 2);
@@ -810,7 +810,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Diogo Câmara', '40137689250', TO_DATE('1995-08-23', 'YYYY-MM-DD'), 'mariana18@terra.com.br', 'Trevo Gael Henrique Aragão, 75, Conjunto Serra Verde, 88967-924 Rodrigues / PE', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Srta. Carolina Casa Grande', '64059218324', TO_DATE('2000-11-14', 'YYYY-MM-DD'), 'lunafogaca@live.com', 'Rua Raul das Neves, 5, Nossa Senhora Do RosArio, 11131-290 Souza / MA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Srta. Carolina Casa Grande', '64059218324', TO_DATE('2000-11-14', 'YYYY-MM-DD'), 'lunafogaca@live.com', 'Rua Raul das Neves, 5, Nossa Senhora Do Rosario, 11131-290 Souza / MA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Sabrina Albuquerque', '68239401589', TO_DATE('1998-03-31', 'YYYY-MM-DD'), 'silvalais@icloud.com', 'Viaduto de Moura, 809, Conjunto Minas Caixa, 21528506 Garcia de Cavalcante / MS', 2);
@@ -855,19 +855,19 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Kevin Pinto', '45123698051', TO_DATE('2003-04-02', 'YYYY-MM-DD'), 'juandias@yahoo.com.br', 'Recanto de Azevedo, 7, Vila Oeste, 21522-655 Lima de Mendes / RR', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Lívia Carvalho', '36849752065', TO_DATE('1991-07-12', 'YYYY-MM-DD'), 'kmoura@uol.com.br', 'Aeroporto Nicolas Almeida, 88, ChAcara Leonina, 05524728 da Cruz do Oeste / TO', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Lívia Carvalho', '36849752065', TO_DATE('1991-07-12', 'YYYY-MM-DD'), 'kmoura@uol.com.br', 'Aeroporto Nicolas Almeida, 88, Chacara Leonina, 05524728 da Cruz do Oeste / TO', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Benjamin Souza', '21935068415', TO_DATE('2000-09-18', 'YYYY-MM-DD'), 'mendeslevi@gmail.com', 'ChAcara da Cruz, 1, Solimoes, 22728-476 Macedo do Sul / MA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Benjamin Souza', '21935068415', TO_DATE('2000-09-18', 'YYYY-MM-DD'), 'mendeslevi@gmail.com', 'Chacara da Cruz, 1, Solimoes, 22728-476 Macedo do Sul / MA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Eduardo Araújo', '02893547141', TO_DATE('2007-01-11', 'YYYY-MM-DD'), 'rafael62@bol.com.br', 'Conjunto OtAvio Guerra, 703, Copacabana, 77566205 Correia Paulista / AM', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Eduardo Araújo', '02893547141', TO_DATE('2007-01-11', 'YYYY-MM-DD'), 'rafael62@bol.com.br', 'Conjunto Otavio Guerra, 703, Copacabana, 77566205 Correia Paulista / AM', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Breno Fonseca', '95012673859', TO_DATE('1997-09-09', 'YYYY-MM-DD'), 'marcos-vinicius83@gmail.com', 'Travessa Nunes, 8, Bacurau, 51405468 Dias / SP', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Maria Alice Cardoso', '15684097375', TO_DATE('1994-03-16', 'YYYY-MM-DD'), 'da-rochalorenzo@yahoo.com.br', 'ChAcara de Silva, Flamengo, 22889857 Fernandes / MA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Maria Alice Cardoso', '15684097375', TO_DATE('1994-03-16', 'YYYY-MM-DD'), 'da-rochalorenzo@yahoo.com.br', 'Chacara de Silva, Flamengo, 22889857 Fernandes / MA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Asafe Silva', '63849012778', TO_DATE('1983-03-14', 'YYYY-MM-DD'), 'casa-grandeana-luiza@icloud.com', 'Quadra Dias, 34, Bernadete, 95511-274 da Cunha de Teixeira / PB', 2);
@@ -942,10 +942,10 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Daniela Borges', '42379085692', TO_DATE('1994-02-04', 'YYYY-MM-DD'), 'theo66@outlook.com.br', 'Trevo Ana Lívia Cavalcanti, 365, Vila Jardim Alvorada, 42683441 Nunes dos Dourados / PI', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Marcos Vinicius Viana', '61243798564', TO_DATE('1992-10-10', 'YYYY-MM-DD'), 'djesus@gmail.com', 'ChAcara João Lucas Pimenta, 93, Milionario, 98940626 Martins / SE', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Marcos Vinicius Viana', '61243798564', TO_DATE('1992-10-10', 'YYYY-MM-DD'), 'djesus@gmail.com', 'Chacara João Lucas Pimenta, 93, Milionario, 98940626 Martins / SE', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'NatAlia Aragão', '10465823726', TO_DATE('2004-03-17', 'YYYY-MM-DD'), 'vsales@gmail.com', 'Viela de Moraes, 4, São Bernardo, 87232440 Pinto de Sales / DF', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Natalia Aragão', '10465823726', TO_DATE('2004-03-17', 'YYYY-MM-DD'), 'vsales@gmail.com', 'Viela de Moraes, 4, São Bernardo, 87232440 Pinto de Sales / DF', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Bernardo Abreu', '21876034580', TO_DATE('1991-09-15', 'YYYY-MM-DD'), 'da-rosajade@live.com', 'Setor da Luz, 279, Oeste, 02232883 Mendes de da Rocha / MA', 2);
@@ -987,7 +987,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'José Pedro Monteiro', '23914065761', TO_DATE('1985-09-19', 'YYYY-MM-DD'), 'upacheco@gmail.com', 'Jardim de da Cunha, Alta Tensão 1ª Seção, 80935-118 Camargo de Moraes / AP', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Gustavo Duarte', '95608327438', TO_DATE('1989-11-04', 'YYYY-MM-DD'), 'bruna65@live.com', 'Esplanada Freitas, 5, FuncionArios, 90193588 Cunha das Flores / TO', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Gustavo Duarte', '95608327438', TO_DATE('1989-11-04', 'YYYY-MM-DD'), 'bruna65@live.com', 'Esplanada Freitas, 5, Funcionarios, 90193588 Cunha das Flores / TO', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Ana Beatriz Ribeiro', '26107439803', TO_DATE('2004-12-14', 'YYYY-MM-DD'), 'pereiramaria-julia@icloud.com', 'Estrada Ana Beatriz da Cruz, 63, Flamengo, 51376-515 Fonseca / RS', 2);
@@ -1023,7 +1023,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Clarice Brito', '96384251051', TO_DATE('1989-02-19', 'YYYY-MM-DD'), 'gcosta@bol.com.br', 'Praça Francisco Câmara, 58, Salgado Filho, 88360-765 Machado / ES', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Amanda Gonçalves', '37594021860', TO_DATE('2003-11-09', 'YYYY-MM-DD'), 'britolucca@uol.com.br', 'ChAcara Casa Grande, 89, São Francisco, 07464520 Sales Verde / RN', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Amanda Gonçalves', '37594021860', TO_DATE('2003-11-09', 'YYYY-MM-DD'), 'britolucca@uol.com.br', 'Chacara Casa Grande, 89, São Francisco, 07464520 Sales Verde / RN', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Alana da Mata', '38749215655', TO_DATE('2000-12-06', 'YYYY-MM-DD'), 'caldeiralais@hotmail.com', 'Esplanada Moreira, 3, Distrito Industrial Do Jatoba, 10672-872 Guerra do Sul / MA', 2);
@@ -1062,10 +1062,10 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Luiz Felipe Marques', '62705149325', TO_DATE('1989-04-17', 'YYYY-MM-DD'), 'ravycostela@outlook.com.br', 'Distrito Rodrigues, 850, Conjunto Celso Machado, 17863-767 Teixeira / AM', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Carolina Dias', '26597348010', TO_DATE('1990-06-08', 'YYYY-MM-DD'), 'camaraluiz-henrique@uol.com.br', 'Rodovia Alexandre Pimenta, 461, CinquentenArio, 30346-156 Lima / BA', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Carolina Dias', '26597348010', TO_DATE('1990-06-08', 'YYYY-MM-DD'), 'camaraluiz-henrique@uol.com.br', 'Rodovia Alexandre Pimenta, 461, Cinquentenario, 30346-156 Lima / BA', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Leonardo Gomes', '70431562890', TO_DATE('1993-11-09', 'YYYY-MM-DD'), 'ferreiraguilherme@outlook.com.br', 'Conjunto NatAlia Gomes, 80, Vila Da Paz, 60464-197 Vasconcelos do Amparo / RR', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Leonardo Gomes', '70431562890', TO_DATE('1993-11-09', 'YYYY-MM-DD'), 'ferreiraguilherme@outlook.com.br', 'Conjunto Natalia Gomes, 80, Vila Da Paz, 60464-197 Vasconcelos do Amparo / RR', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Daniel Viana', '26875014335', TO_DATE('2007-11-15', 'YYYY-MM-DD'), 'miguel89@live.com', 'Lago Bruno Campos, Vila Jardim Montanhes, 75095-465 Vargas do Sul / PI', 2);
@@ -1089,7 +1089,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Ana Pinto', '32146907525', TO_DATE('1985-03-15', 'YYYY-MM-DD'), 'frodrigues@terra.com.br', 'Via de Gomes, 383, Pilar, 32735-241 Costela / RJ', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'NatAlia da Cruz', '97361802559', TO_DATE('2005-08-31', 'YYYY-MM-DD'), 'samuelmartins@hotmail.com', 'Viela Rocha, 88, Santa Efigênia, 16481-980 Mendes de Silveira / AL', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Natalia da Cruz', '97361802559', TO_DATE('2005-08-31', 'YYYY-MM-DD'), 'samuelmartins@hotmail.com', 'Viela Rocha, 88, Santa Efigênia, 16481-980 Mendes de Silveira / AL', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Miguel Silveira', '05684379265', TO_DATE('1984-08-10', 'YYYY-MM-DD'), 'henry-gabriel25@outlook.com.br', 'Recanto Costela, 61, Vila Copacabana, 77345475 Sampaio de da Luz / RJ', 2);
@@ -1113,7 +1113,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Lorena Dias', '87152496030', TO_DATE('1989-10-06', 'YYYY-MM-DD'), 'isabelaviana@yahoo.com.br', 'Esplanada de Duarte, 779, Vila São Rafael, 34745-245 Souza Alegre / PB', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'OtAvio Nunes', '69083751457', TO_DATE('2008-08-25', 'YYYY-MM-DD'), 'arthur-miguel33@bol.com.br', 'Alameda Aurora Lima, 95, Senhor Dos Passos, 39874113 Duarte / SC', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Otavio Nunes', '69083751457', TO_DATE('2008-08-25', 'YYYY-MM-DD'), 'arthur-miguel33@bol.com.br', 'Alameda Aurora Lima, 95, Senhor Dos Passos, 39874113 Duarte / SC', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Olivia Aparecida', '67324580947', TO_DATE('1982-01-01', 'YYYY-MM-DD'), 'yuri85@live.com', 'Conjunto Diogo Duarte, Vila São Geraldo, 22949-381 da Cruz de Duarte / RJ', 2);
@@ -1146,7 +1146,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Anthony Gabriel Casa Grande', '03287961586', TO_DATE('1985-10-26', 'YYYY-MM-DD'), 'nmachado@live.com', 'Condomínio Alana Rezende, 355, Grota, 78715-841 Lima do Sul / PI', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Calebe da Conceição', '71845293673', TO_DATE('1993-07-01', 'YYYY-MM-DD'), 'montenegroluiz-otavio@outlook.com.br', 'Fazenda de Vasconcelos, 4, Vila PaquetA, 89298-808 Nogueira de Goiás / RR', 2);
+VALUES (SQ_ALUNO.NEXTVAL, 'Calebe da Conceição', '71845293673', TO_DATE('1993-07-01', 'YYYY-MM-DD'), 'montenegroluiz-otavio@outlook.com.br', 'Fazenda de Vasconcelos, 4, Vila Paqueta, 89298-808 Nogueira de Goiás / RR', 2);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Eloah Freitas', '21956487085', TO_DATE('1996-01-22', 'YYYY-MM-DD'), 'rcosta@gmail.com', 'Rua Laura Melo, 35, Vila Nova Gameleira 3ª Seção, 01484-399 Araújo / SP', 2);
@@ -1347,10 +1347,10 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Leandro da Costa', '79641380575', TO_DATE('1987-06-06', 'YYYY-MM-DD'), 'barbaracastro@terra.com.br', 'Colônia Barros, 1, Confisco, 71200-720 da Rocha / TO', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Caio Aparecida', '24506873947', TO_DATE('2004-03-12', 'YYYY-MM-DD'), 'luigigoncalves@live.com', 'Lago de Pimenta, 519, CinquentenArio, 79428179 Sales / MA', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Dr. Caio Aparecida', '24506873947', TO_DATE('2004-03-12', 'YYYY-MM-DD'), 'luigigoncalves@live.com', 'Lago de Pimenta, 519, Cinquentenario, 79428179 Sales / MA', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Matteo Fernandes', '27894653128', TO_DATE('1992-06-30', 'YYYY-MM-DD'), 'ana-luizarios@terra.com.br', 'Distrito Leonardo Andrade, 1, Túnel De Ibirité, 21722145 Pacheco de GoiAs / RR', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Matteo Fernandes', '27894653128', TO_DATE('1992-06-30', 'YYYY-MM-DD'), 'ana-luizarios@terra.com.br', 'Distrito Leonardo Andrade, 1, Túnel De Ibirité, 21722145 Pacheco de Goias / RR', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Maya Jesus', '18459306739', TO_DATE('1991-09-16', 'YYYY-MM-DD'), 'davi-lucca00@bol.com.br', 'Quadra Isabella Viana, 37, Outro, 65920-246 Mendonça / MT', 1);
@@ -1374,7 +1374,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Alexandre Oliveira', '50972381686', TO_DATE('1982-11-05', 'YYYY-MM-DD'), 'peixotoraquel@icloud.com', 'Recanto Monteiro, 285, Vila Barragem Santa Lúcia, 53486401 da Rosa / RO', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'José Pedro Garcia', '24563098124', TO_DATE('1989-04-26', 'YYYY-MM-DD'), 'joana00@bol.com.br', 'ChAcara de Carvalho, 299, Marieta 1ª Seção, 14551293 da Conceição / AL', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'José Pedro Garcia', '24563098124', TO_DATE('1989-04-26', 'YYYY-MM-DD'), 'joana00@bol.com.br', 'Chacara de Carvalho, 299, Marieta 1ª Seção, 14551293 da Conceição / AL', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Leonardo Teixeira', '89165423755', TO_DATE('1983-04-15', 'YYYY-MM-DD'), 'csa@bol.com.br', 'Loteamento de da Mata, Vila Pinho, 21190170 Fonseca de Guerra / PI', 1);
@@ -1395,7 +1395,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Raquel Gomes', '38207549629', TO_DATE('1988-04-04', 'YYYY-MM-DD'), 'isis01@hotmail.com', 'Feira Sofia Cirino, 18, Confisco, 58695073 Caldeira / SC', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'OtAvio da Cunha', '43659720143', TO_DATE('1994-01-21', 'YYYY-MM-DD'), 'samuelduarte@gmail.com', 'Feira Sophia Farias, 73, Serra Do Curral, 11923603 Jesus de Nascimento / SC', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Otavio da Cunha', '43659720143', TO_DATE('1994-01-21', 'YYYY-MM-DD'), 'samuelduarte@gmail.com', 'Feira Sophia Farias, 73, Serra Do Curral, 11923603 Jesus de Nascimento / SC', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Cauã Rodrigues', '87215643026', TO_DATE('1981-06-08', 'YYYY-MM-DD'), 'pastorjulia@hotmail.com', 'Praia de Costela, 6, Alto Barroca, 91149830 Sales de da Mota / PI', 1);
@@ -1413,7 +1413,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Dra. Catarina Aragão', '82361509768', TO_DATE('1987-05-18', 'YYYY-MM-DD'), 'fernandessabrina@icloud.com', 'Loteamento Isis Carvalho, 70, Santa Cruz, 23182971 Silveira da Prata / AP', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Sra. NatAlia Cavalcante', '45076892365', TO_DATE('1982-10-19', 'YYYY-MM-DD'), 'enricobarros@uol.com.br', 'Praia Viana, 150, Vila Nova Gameleira 2ª Seção, 55618444 Barros / PI', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Sra. Natalia Cavalcante', '45076892365', TO_DATE('1982-10-19', 'YYYY-MM-DD'), 'enricobarros@uol.com.br', 'Praia Viana, 150, Vila Nova Gameleira 2ª Seção, 55618444 Barros / PI', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Vitor Hugo Mendes', '47186205976', TO_DATE('1993-12-21', 'YYYY-MM-DD'), 'bmartins@gmail.com', 'Jardim de da Cruz, Minas Caixa, 51584-826 Nunes do Campo / ES', 1);
@@ -1485,7 +1485,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Maria Julia Mendes', '38204971613', TO_DATE('2008-04-25', 'YYYY-MM-DD'), 'silveiramaria-eduarda@live.com', 'Distrito de Pinto, 868, Vila Nova Gameleira 1ª Seção, 25893708 Rodrigues do Galho / AC', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Ester Rodrigues', '35082761986', TO_DATE('2001-06-23', 'YYYY-MM-DD'), 'maria-alice90@gmail.com', 'Setor Luiz Gustavo Vasconcelos, 55, Granja De Freitas, 86796325 Cirino de GoiAs / RS', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Ester Rodrigues', '35082761986', TO_DATE('2001-06-23', 'YYYY-MM-DD'), 'maria-alice90@gmail.com', 'Setor Luiz Gustavo Vasconcelos, 55, Granja De Freitas, 86796325 Cirino de Goias / RS', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Vitor Sousa', '94671508249', TO_DATE('1985-02-21', 'YYYY-MM-DD'), 'rodriguesbeatriz@yahoo.com.br', 'Estação Caroline Gomes, 39, Nossa Senhora Da Conceição, 35895138 Novais / RR', 1);
@@ -1500,13 +1500,13 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Rafael Gomes', '98154632098', TO_DATE('1997-12-02', 'YYYY-MM-DD'), 'maria-lizabreu@bol.com.br', 'Rodovia Moura, 356, Fernão Dias, 58660598 Vieira dos Dourados / PI', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Lara da Rosa', '29758463128', TO_DATE('1996-01-27', 'YYYY-MM-DD'), 'lavinia55@bol.com.br', 'Lagoa Pimenta, 2, Xodo-Marize, 50200-024 Porto de GoiAs / RJ', 3);
+VALUES (SQ_ALUNO.NEXTVAL, 'Lara da Rosa', '29758463128', TO_DATE('1996-01-27', 'YYYY-MM-DD'), 'lavinia55@bol.com.br', 'Lagoa Pimenta, 2, Xodo-Marize, 50200-024 Porto de Goias / RJ', 3);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Isabel Barbosa', '32168509433', TO_DATE('1989-10-08', 'YYYY-MM-DD'), 'handrade@uol.com.br', 'Estação de Rodrigues, 5, Jardinópolis, 88966-997 Monteiro / RR', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'OtAvio Machado', '74615093810', TO_DATE('2007-01-12', 'YYYY-MM-DD'), 'otto18@uol.com.br', 'Colônia de Sousa, 23, Castanheira, 92049106 Borges / PE', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Otavio Machado', '74615093810', TO_DATE('2007-01-12', 'YYYY-MM-DD'), 'otto18@uol.com.br', 'Colônia de Sousa, 23, Castanheira, 92049106 Borges / PE', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Oliver da Luz', '72354980647', TO_DATE('2002-08-13', 'YYYY-MM-DD'), 'tmoreira@hotmail.com', 'Morro Mendes, 55, Vila Primeiro De Maio, 84726-290 Casa Grande de Minas / PE', 1);
@@ -1560,7 +1560,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Ana Pires', '41872930514', TO_DATE('1982-10-18', 'YYYY-MM-DD'), 'ualmeida@icloud.com', 'Alameda de Barbosa, 564, São João Batista, 21758839 Montenegro de Freitas / PB', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Vitor Hugo Cavalcanti', '09478361287', TO_DATE('1999-09-15', 'YYYY-MM-DD'), 'marcos-viniciusgarcia@hotmail.com', 'ChAcara Enzo Gabriel Castro, 579, Vila Tirol, 96882769 Rios de Porto / AL', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Vitor Hugo Cavalcanti', '09478361287', TO_DATE('1999-09-15', 'YYYY-MM-DD'), 'marcos-viniciusgarcia@hotmail.com', 'Chacara Enzo Gabriel Castro, 579, Vila Tirol, 96882769 Rios de Porto / AL', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Augusto Pastor', '53120489760', TO_DATE('1992-10-05', 'YYYY-MM-DD'), 'pnovaes@uol.com.br', 'Viela Pietro Farias, 25, Vila São Paulo, 96240-964 Gomes da Prata / ES', 1);
@@ -1575,7 +1575,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Srta. Eloah Fonseca', '49712086585', TO_DATE('1999-03-26', 'YYYY-MM-DD'), 'amandada-mota@gmail.com', 'Recanto SA, 91, Castanheira, 98980-880 Martins da Prata / BA', 3);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'João Gabriel Barros', '74680123508', TO_DATE('2007-01-11', 'YYYY-MM-DD'), 'ida-luz@outlook.com.br', 'Passarela de Sampaio, 587, FuncionArios, 94155-945 Camargo / AM', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'João Gabriel Barros', '74680123508', TO_DATE('2007-01-11', 'YYYY-MM-DD'), 'ida-luz@outlook.com.br', 'Passarela de Sampaio, 587, Funcionarios, 94155-945 Camargo / AM', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Catarina Silveira', '92065387130', TO_DATE('2006-02-27', 'YYYY-MM-DD'), 'ferreiraian@hotmail.com', 'Viela Davi da Conceição, Vila De SA, 36536-218 Duarte da Praia / RN', 3);
@@ -1716,7 +1716,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Bernardo Freitas', '16408729304', TO_DATE('1988-04-01', 'YYYY-MM-DD'), 'oliveirafernanda@uol.com.br', 'Residencial de Fogaça, 80, Vista Do Sol, 20426201 Brito de Carvalho / SC', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Aurora Cassiano', '41398765228', TO_DATE('1992-02-24', 'YYYY-MM-DD'), 'ecunha@yahoo.com.br', 'Fazenda Emanuel Pereira, 82, Vila Da Luz, 07598-897 Fogaça de GoiAs / TO', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Aurora Cassiano', '41398765228', TO_DATE('1992-02-24', 'YYYY-MM-DD'), 'ecunha@yahoo.com.br', 'Fazenda Emanuel Pereira, 82, Vila Da Luz, 07598-897 Fogaça de Goias / TO', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Giovanna Pires', '94308671213', TO_DATE('1985-11-02', 'YYYY-MM-DD'), 'luiz-otavio31@yahoo.com.br', 'Trecho Azevedo, 60, Santa Amelia, 44974-700 Carvalho / PA', 1);
@@ -1734,7 +1734,7 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_
 VALUES (SQ_ALUNO.NEXTVAL, 'Mariah Cardoso', '97345620883', TO_DATE('1984-12-12', 'YYYY-MM-DD'), 'teixeiramaite@yahoo.com.br', 'Condomínio Mendes, 8, Leticia, 85346-557 Vasconcelos / BA', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
-VALUES (SQ_ALUNO.NEXTVAL, 'Joaquim Albuquerque', '04873259665', TO_DATE('2001-05-10', 'YYYY-MM-DD'), 'cauealves@yahoo.com.br', 'Condomínio Costela, Vila PaquetA, 56589-635 Pires do Amparo / AC', 1);
+VALUES (SQ_ALUNO.NEXTVAL, 'Joaquim Albuquerque', '04873259665', TO_DATE('2001-05-10', 'YYYY-MM-DD'), 'cauealves@yahoo.com.br', 'Condomínio Costela, Vila Paqueta, 56589-635 Pires do Amparo / AC', 1);
 
 INSERT INTO ALUNO (id_aluno, nm_aluno, cpf_aluno, dt_nascimento_aluno, nm_email_aluno, nm_endereco_aluno, cd_situacao_aluno)
 VALUES (SQ_ALUNO.NEXTVAL, 'Marina Barros', '93125640725', TO_DATE('2000-07-20', 'YYYY-MM-DD'), 'ogomes@hotmail.com', 'Sítio de Freitas, 4, Jardim Leblon, 36220334 da Rocha de Cirino / GO', 1);
@@ -2014,7 +2014,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'FUNDIRP45', 'Fundamentos do Direito Público e Privado', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATAPLC46', 'MatemAtica Aplicada ao Comércio Exterior', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATAPLC46', 'Matematica Aplicada ao Comércio Exterior', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'METCIE47', 'Metodologia Científica', 80, TRUNC(SYSDATE));
@@ -2074,13 +2074,13 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROCOME65', 'Projeto em Comércio Exterior III', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISCOME66', 'SistemAtica do Comércio Exterior', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISCOME66', 'Sistematica do Comércio Exterior', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESPANHO67', 'Espanhol III', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESAMBP68', 'Gestão Ambiental PortuAria', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESAMBP68', 'Gestão Ambiental Portuaria', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESCUST69', 'Gestão de Custos e Tributos', 80, TRUNC(SYSDATE));
@@ -2098,7 +2098,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESPANHO73', 'Espanhol IV', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESOPEP74', 'Gestão de Operações PortuArias', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESOPEP74', 'Gestão de Operações Portuarias', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESESTI75', 'Gestão Estratégica Internacional', 80, TRUNC(SYSDATE));
@@ -2128,7 +2128,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESWEB83', 'Desenvolvimento Web II', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATCOM84', 'MatemAtica para Computação', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATCOM84', 'Matematica para Computação', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'ALGLÓGP85', 'Algoritmos e Lógica de Programação II', 80, TRUNC(SYSDATE));
@@ -2155,7 +2155,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'INTDASC92', 'Internet das Coisas e Aplicações', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'EXPUSU93', 'Experiência do UsuArio', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'EXPUSU93', 'Experiência do Usuario', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'APRMAQ94', 'Aprendizagem de Máquina', 80, TRUNC(SYSDATE));
@@ -2191,7 +2191,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'CONTABI104', 'Contabilidade', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INFAPLG105', 'InformAtica Aplicada à Gestão', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'INFAPLG105', 'Informatica Aplicada à Gestão', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECINO106', 'Sociedade, Tecnologia e Inovação', 80, TRUNC(SYSDATE));
@@ -2230,7 +2230,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISINF117', 'Sistemas de Informação', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATFIN118', 'MatemAtica Financeira', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATFIN118', 'Matematica Financeira', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTG119', 'Projeto Integrador em Gestão Empresarial IV', 80, TRUNC(SYSDATE));
@@ -2329,7 +2329,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'MECDOSF150', 'Mecânica dos Fluidos', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'OPEUNI151', 'Operações UnitArias I', 80, TRUNC(SYSDATE));
+VALUES (SQ_DISCIPLINA.NEXTVAL, 'OPEUNI151', 'Operações Unitarias I', 80, TRUNC(SYSDATE));
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina, dt_ativacao_disciplina)
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIMEIA152', 'Química do Meio Ambiente', 80, TRUNC(SYSDATE));
@@ -2405,7 +2405,10 @@ INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_c
 VALUES (SQ_TURMA.NEXTVAL, TO_DATE('2023-01-01', 'YYYY-MM-DD'), TO_DATE('2023-06-30', 'YYYY-MM-DD'), 1, 5);
 
 -- Ofertas para 2023/1
---
+
+INSERT INTO OFERTA (id_oferta, cd_sala_oferta, dd_semana_oferta, hr_inicio_oferta, hr_fim_oferta, id_disciplina, id_turma)
+SELECT
+    SQ_OFERTA.NEXTVAL,
 
 -- Turmas 2023/2 - graduação das anteriores e novas
 INSERT INTO TURMA (id_turma, dt_inicio_turma, dt_fim_turma, id_ciclo_turma, id_curso)
