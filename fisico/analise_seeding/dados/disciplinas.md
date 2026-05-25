@@ -1,3 +1,5 @@
+TODO: refazer disciplina_curso.csv e grade.csv para atribuir nos horários específicos uma sala apropriada (pois durante as transformações você quebrou)
+
 # Análise e Desenvolvimento de Sistemas (ADS)
 
 ## 1º Semestre

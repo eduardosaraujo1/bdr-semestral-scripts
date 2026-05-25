@@ -51,7 +51,7 @@ CREATE TABLE DISCIPLINA_CURSO (
   id_curso INTEGER,
   id_disciplina INTEGER,
   id_ciclo_disciplina_curso NUMBER(2),
-  PRIMARY KEY (id_curso, id_disciplina, id_ciclo_disciplina_curso),
+  PRIMARY KEY (id_curso, id_disciplina),
   FOREIGN KEY (id_curso) REFERENCES CURSO (id_curso),
   FOREIGN KEY (id_disciplina) REFERENCES DISCIPLINA (id_disciplina)
 );
@@ -60,11 +60,10 @@ CREATE TABLE GRADE_ATUAL (
   dd_semana_grade_atual CHAR(3) NOT NULL CHECK (dd_semana_grade_atual IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')),
   hr_inicio_grade_atual NUMBER(4) NOT NULL,
   cd_sala_grade_atual VARCHAR(20) NOT NULL,
-  id_ciclo_disciplina_curso INTEGER NOT NULL,
   id_curso INTEGER NOT NULL,
   id_disciplina INTEGER NOT NULL,
   PRIMARY KEY (dd_semana_grade_atual, hr_inicio_grade_atual, cd_sala_grade_atual),
-  FOREIGN KEY (id_curso, id_disciplina, id_ciclo_disciplina_curso) REFERENCES DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+  FOREIGN KEY (id_curso, id_disciplina) REFERENCES DISCIPLINA_CURSO (id_curso, id_disciplina)
 );
 
 CREATE TABLE PERIODO_LETIVO (

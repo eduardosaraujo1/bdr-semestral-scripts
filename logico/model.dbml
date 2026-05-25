@@ -43,7 +43,7 @@ Table DISCIPLINA_CURSO {
   id_disciplina INTEGER [ref: > DISCIPLINA.id_disciplina]
   id_ciclo_disciplina_curso NUMBER(2)
   indexes {
-    (id_curso, id_disciplina, id_ciclo_disciplina_curso) [pk]
+    (id_curso, id_disciplina) [pk]
   }
 }
 
@@ -51,7 +51,6 @@ Table GRADE_ATUAL {
   dd_semana_grade_atual CHAR(3) [not null]
   hr_inicio_grade_atual NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
   cd_sala_grade_atual VARCHAR(20) [not null]
-  id_ciclo_disciplina_curso NUMBER(2) [not null]
   id_curso INTEGER [not null]
   id_disciplina INTEGER [not null]
 
@@ -59,7 +58,7 @@ Table GRADE_ATUAL {
     (dd_semana_grade_atual, hr_inicio_grade_atual,cd_sala_grade_atual) [pk]
   }
 }
-Ref: GRADE_ATUAL.(id_curso,id_disciplina,id_ciclo_disciplina_curso) > DISCIPLINA_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso)
+Ref: GRADE_ATUAL.(id_curso,id_disciplina) > DISCIPLINA_CURSO.(id_curso,id_disciplina)
 
 Table PERIODO_LETIVO {
   id_periodo_letivo INTEGER [pk]
