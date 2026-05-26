@@ -1863,518 +1863,518 @@ VALUES (SQ_PROFESSOR.NEXTVAL, 'Aline Martins Gonçalves', '12345678920', 'aline.
 
 -- TABELA CURSO
 INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_carga_horaria_curso, qt_semestre_curso, cd_modalidade_curso)
-VALUES (SQ_CURSO.NEXTVAL, 'ADS', 'Analise e Desenvolvimento de Sistemas', 'Curso superior de tecnologia focado em desenvolvimento de software e sistemas computacionais.', 1, 2400, 6, 1);
+VALUES (1, 'ADS', 'Analise e Desenvolvimento de Sistemas', 'Curso superior de tecnologia focado em desenvolvimento de software e sistemas computacionais.', 1, 2400, 6, 1);
 
 INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_carga_horaria_curso, qt_semestre_curso, cd_modalidade_curso)
-VALUES (SQ_CURSO.NEXTVAL, 'DSM', 'Desenvolvimento de Software Multiplataforma', 'Curso focado no desenvolvimento de aplicações web, mobile e multiplataforma.', 1, 2400, 6, 1);
+VALUES (2, 'DSM', 'Desenvolvimento de Software Multiplataforma', 'Curso focado no desenvolvimento de aplicações web, mobile e multiplataforma.', 1, 2400, 6, 1);
 
 -- TABELA DISCIPINA
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ENGSOF1', 'Engenharia de Software I', 80);
+VALUES (1, 'ENGSOF1', 'Engenharia de Software I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ALGLÓGP2', 'Algoritmos e Lógica de Programação I', 80);
+VALUES (2, 'ALGLÓGP2', 'Algoritmos e Lógica de Programação I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISOPE3', 'Sistemas Operacionais', 80);
+VALUES (3, 'SISOPE3', 'Sistemas Operacionais', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ARQORGC4', 'Arquitetura e Organização de Computadores', 80);
+VALUES (4, 'ARQORGC4', 'Arquitetura e Organização de Computadores', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMEXP5', 'Comunicação e Expressão I', 80);
+VALUES (5, 'COMEXP5', 'Comunicação e Expressão I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTA6', 'Projeto Integrador ADS I', 80);
+VALUES (6, 'PROINTA6', 'Projeto Integrador ADS I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INGLÊS7', 'Inglês I', 80);
+VALUES (7, 'INGLÊS7', 'Inglês I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ENGSOF8', 'Engenharia de Software II', 80);
+VALUES (8, 'ENGSOF8', 'Engenharia de Software II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LINPRO9', 'Linguagem de Programação I', 80);
+VALUES (9, 'LINPRO9', 'Linguagem de Programação I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESWEB10', 'Desenvolvimento Web I', 80);
+VALUES (10, 'DESWEB10', 'Desenvolvimento Web I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'BANDADR11', 'Banco de Dados Relacional I', 80);
+VALUES (11, 'BANDADR11', 'Banco de Dados Relacional I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMSEGI12', 'Compliance e Segurança da Informação', 80);
+VALUES (12, 'COMSEGI12', 'Compliance e Segurança da Informação', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTA13', 'Projeto Integrador ADS II', 80);
+VALUES (13, 'PROINTA13', 'Projeto Integrador ADS II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INGLÊS14', 'Inglês II', 80);
+VALUES (14, 'INGLÊS14', 'Inglês II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESPRO15', 'Gestão de Projetos', 80);
+VALUES (15, 'GESPRO15', 'Gestão de Projetos', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'REDCOM16', 'Redes de Computadores', 80);
+VALUES (16, 'REDCOM16', 'Redes de Computadores', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LINPRO17', 'Linguagem de Programação II', 80);
+VALUES (17, 'LINPRO17', 'Linguagem de Programação II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'EMPINO18', 'Empreendedorismo e Inovação', 80);
+VALUES (18, 'EMPINO18', 'Empreendedorismo e Inovação', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'BANDADR19', 'Banco de Dados Relacional II', 80);
+VALUES (19, 'BANDADR19', 'Banco de Dados Relacional II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTA20', 'Projeto Integrador ADS III', 80);
+VALUES (20, 'PROINTA20', 'Projeto Integrador ADS III', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INGLÊS21', 'Inglês III', 80);
+VALUES (21, 'INGLÊS21', 'Inglês III', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PADPROS22', 'Padrões de Projeto de Software', 80);
+VALUES (22, 'PADPROS22', 'Padrões de Projeto de Software', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESTDAD23', 'Estrutura de Dados', 80);
+VALUES (23, 'ESTDAD23', 'Estrutura de Dados', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESTAPL24', 'Estatística Aplicada', 80);
+VALUES (24, 'ESTAPL24', 'Estatística Aplicada', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESDISM25', 'Desenvolvimento para Dispositivos Móveis I', 80);
+VALUES (25, 'DESDISM25', 'Desenvolvimento para Dispositivos Móveis I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INTHUMC26', 'Interação Humano Computador', 80);
+VALUES (26, 'INTHUMC26', 'Interação Humano Computador', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTA27', 'Projeto Integrador ADS IV', 80);
+VALUES (27, 'PROINTA27', 'Projeto Integrador ADS IV', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INGLÊS28', 'Inglês IV', 80);
+VALUES (28, 'INGLÊS28', 'Inglês IV', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUATESS29', 'Qualidade e Testes de Software', 80);
+VALUES (29, 'QUATESS29', 'Qualidade e Testes de Software', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISEMBI30', 'Sistemas Embarcados e IoT', 80);
+VALUES (30, 'SISEMBI30', 'Sistemas Embarcados e IoT', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ENGAPLW31', 'Engenharia de Aplicações Web', 80);
+VALUES (31, 'ENGAPLW31', 'Engenharia de Aplicações Web', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INTARTA32', 'Inteligência Artificial e Aplicações', 80);
+VALUES (32, 'INTARTA32', 'Inteligência Artificial e Aplicações', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MINDAD33', 'Mineração de Dados', 80);
+VALUES (33, 'MINDAD33', 'Mineração de Dados', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTA34', 'Projeto Integrador ADS V', 80);
+VALUES (34, 'PROINTA34', 'Projeto Integrador ADS V', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INGLÊS35', 'Inglês V', 80);
+VALUES (35, 'INGLÊS35', 'Inglês V', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMCOG36', 'Computação Cognitiva', 80);
+VALUES (36, 'COMCOG36', 'Computação Cognitiva', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMNUV37', 'Computação em Nuvem I', 80);
+VALUES (37, 'COMNUV37', 'Computação em Nuvem I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ENGINTW38', 'Engenharia de Interfaces Web', 80);
+VALUES (38, 'ENGINTW38', 'Engenharia de Interfaces Web', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'VISCOM39', 'Visão Computacional', 80);
+VALUES (39, 'VISCOM39', 'Visão Computacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESGOVT40', 'Gestão e Governança de Tecnologia da Informação', 80);
+VALUES (40, 'GESGOVT40', 'Gestão e Governança de Tecnologia da Informação', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTA41', 'Projeto Integrador ADS VI', 80);
+VALUES (41, 'PROINTA41', 'Projeto Integrador ADS VI', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INGLÊS42', 'Inglês VI', 80);
+VALUES (42, 'INGLÊS42', 'Inglês VI', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ADMGER43', 'Administração Geral', 80);
+VALUES (43, 'ADMGER43', 'Administração Geral', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMEXT44', 'Comércio Exterior', 80);
+VALUES (44, 'COMEXT44', 'Comércio Exterior', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'FUNDIRP45', 'Fundamentos do Direito Público e Privado', 80);
+VALUES (45, 'FUNDIRP45', 'Fundamentos do Direito Público e Privado', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATAPLC46', 'Matematica Aplicada ao Comércio Exterior', 80);
+VALUES (46, 'MATAPLC46', 'Matematica Aplicada ao Comércio Exterior', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'METCIE47', 'Metodologia Científica', 80);
+VALUES (47, 'METCIE47', 'Metodologia Científica', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMEXP48', 'Comunicação e Expressão II', 80);
+VALUES (48, 'COMEXP48', 'Comunicação e Expressão II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'CONGER49', 'Contabilidade Gerencial', 80);
+VALUES (49, 'CONGER49', 'Contabilidade Gerencial', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DIRINT50', 'Direito Internacional', 80);
+VALUES (50, 'DIRINT50', 'Direito Internacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ECONOMI51', 'Economia', 80);
+VALUES (51, 'ECONOMI51', 'Economia', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESTAPLC52', 'Estatística Aplicada ao Comércio Exterior', 80);
+VALUES (52, 'ESTAPLC52', 'Estatística Aplicada ao Comércio Exterior', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'POLCOME53', 'Política Comercial Externa', 80);
+VALUES (53, 'POLCOME53', 'Política Comercial Externa', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROCOME54', 'Projeto em Comércio Exterior I', 80);
+VALUES (54, 'PROCOME54', 'Projeto em Comércio Exterior I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ECOINT55', 'Economia Internacional', 80);
+VALUES (55, 'ECOINT55', 'Economia Internacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESPANHO56', 'Espanhol I', 80);
+VALUES (56, 'ESPANHO56', 'Espanhol I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESFIN57', 'Gestão Financeira', 80);
+VALUES (57, 'GESFIN57', 'Gestão Financeira', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LOGISTI58', 'Logística', 80);
+VALUES (58, 'LOGISTI58', 'Logística', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MODTRAS59', 'Modais de Transporte e Seguro de Carga', 80);
+VALUES (59, 'MODTRAS59', 'Modais de Transporte e Seguro de Carga', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROCOME60', 'Projeto em Comércio Exterior II', 80);
+VALUES (60, 'PROCOME60', 'Projeto em Comércio Exterior II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESPANHO61', 'Espanhol II', 80);
+VALUES (61, 'ESPANHO61', 'Espanhol II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LEGADU62', 'Legislação Aduaneira', 80);
+VALUES (62, 'LEGADU62', 'Legislação Aduaneira', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LOGINT63', 'Logística Internacional', 80);
+VALUES (63, 'LOGINT63', 'Logística Internacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MARINT64', 'Marketing Internacional', 80);
+VALUES (64, 'MARINT64', 'Marketing Internacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROCOME65', 'Projeto em Comércio Exterior III', 80);
+VALUES (65, 'PROCOME65', 'Projeto em Comércio Exterior III', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISCOME66', 'Sistematica do Comércio Exterior', 80);
+VALUES (66, 'SISCOME66', 'Sistematica do Comércio Exterior', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESPANHO67', 'Espanhol III', 80);
+VALUES (67, 'ESPANHO67', 'Espanhol III', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESAMBP68', 'Gestão Ambiental Portuaria', 80);
+VALUES (68, 'GESAMBP68', 'Gestão Ambiental Portuaria', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESCUST69', 'Gestão de Custos e Tributos', 80);
+VALUES (69, 'GESCUST69', 'Gestão de Custos e Tributos', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROCOME70', 'Projeto em Comércio Exterior IV', 80);
+VALUES (70, 'PROCOME70', 'Projeto em Comércio Exterior IV', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'REGADUE71', 'Regimes Aduaneiros Especiais', 80);
+VALUES (71, 'REGADUE71', 'Regimes Aduaneiros Especiais', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TEOPRAC72', 'Teoria e Prática Cambial', 80);
+VALUES (72, 'TEOPRAC72', 'Teoria e Prática Cambial', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESPANHO73', 'Espanhol IV', 80);
+VALUES (73, 'ESPANHO73', 'Espanhol IV', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESOPEP74', 'Gestão de Operações Portuarias', 80);
+VALUES (74, 'GESOPEP74', 'Gestão de Operações Portuarias', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESESTI75', 'Gestão Estratégica Internacional', 80);
+VALUES (75, 'GESESTI75', 'Gestão Estratégica Internacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MERFINI76', 'Mercado e Finanças Internacionais', 80);
+VALUES (76, 'MERFINI76', 'Mercado e Finanças Internacionais', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROCOME77', 'Projeto em Comércio Exterior V', 80);
+VALUES (77, 'PROCOME77', 'Projeto em Comércio Exterior V', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECNEGI78', 'Técnicas de Negociação Internacional', 80);
+VALUES (78, 'TECNEGI78', 'Técnicas de Negociação Internacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESDIG79', 'Design Digital', 80);
+VALUES (79, 'DESDIG79', 'Design Digital', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MODBAND80', 'Modelagem de Banco de Dados', 80);
+VALUES (80, 'MODBAND80', 'Modelagem de Banco de Dados', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISOPER81', 'Sistemas Operacionais e Redes de Computadores', 80);
+VALUES (81, 'SISOPER81', 'Sistemas Operacionais e Redes de Computadores', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECPRO82', 'Técnicas de Programação I', 80);
+VALUES (82, 'TECPRO82', 'Técnicas de Programação I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESWEB83', 'Desenvolvimento Web II', 80);
+VALUES (83, 'DESWEB83', 'Desenvolvimento Web II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATCOM84', 'Matematica para Computação', 80);
+VALUES (84, 'MATCOM84', 'Matematica para Computação', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ALGLÓGP85', 'Algoritmos e Lógica de Programação II', 80);
+VALUES (85, 'ALGLÓGP85', 'Algoritmos e Lógica de Programação II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESWEB86', 'Desenvolvimento Web III', 80);
+VALUES (86, 'DESWEB86', 'Desenvolvimento Web III', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ALGLIN87', 'Álgebra Linear', 80);
+VALUES (87, 'ALGLIN87', 'Álgebra Linear', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESAGIP88', 'Gestão Ágil de Projetos de Software', 80);
+VALUES (88, 'GESAGIP88', 'Gestão Ágil de Projetos de Software', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'BANDADN89', 'Banco de Dados Não Relacional', 80);
+VALUES (89, 'BANDADN89', 'Banco de Dados Não Relacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INTENTC90', 'Integração e Entrega Contínua', 80);
+VALUES (90, 'INTENTC90', 'Integração e Entrega Contínua', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LABDESW91', 'Laboratório de Desenvolvimento Web', 80);
+VALUES (91, 'LABDESW91', 'Laboratório de Desenvolvimento Web', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INTDASC92', 'Internet das Coisas e Aplicações', 80);
+VALUES (92, 'INTDASC92', 'Internet das Coisas e Aplicações', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'EXPUSU93', 'Experiência do Usuario', 80);
+VALUES (93, 'EXPUSU93', 'Experiência do Usuario', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'APRMAQ94', 'Aprendizagem de Máquina', 80);
+VALUES (94, 'APRMAQ94', 'Aprendizagem de Máquina', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LABDESD95', 'Laboratório de Desenvolvimento para Dispositivos Móveis', 80);
+VALUES (95, 'LABDESD95', 'Laboratório de Desenvolvimento para Dispositivos Móveis', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESDISM96', 'Desenvolvimento para Dispositivos Móveis II', 80);
+VALUES (96, 'DESDISM96', 'Desenvolvimento para Dispositivos Móveis II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SEGNODE97', 'Segurança no Desenvolvimento de Aplicações', 80);
+VALUES (97, 'SEGNODE97', 'Segurança no Desenvolvimento de Aplicações', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'FUNREDT98', 'Fundamentos da Redação Técnica', 80);
+VALUES (98, 'FUNREDT98', 'Fundamentos da Redação Técnica', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMNUV99', 'Computação em Nuvem II', 80);
+VALUES (99, 'COMNUV99', 'Computação em Nuvem II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROLINN100', 'Processamento de Linguagem Natural', 80);
+VALUES (100, 'PROLINN100', 'Processamento de Linguagem Natural', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LABDESM101', 'Laboratório de Desenvolvimento Multiplataforma', 80);
+VALUES (101, 'LABDESM101', 'Laboratório de Desenvolvimento Multiplataforma', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ETIPROP102', 'Etica Profissional e Patentes', 80);
+VALUES (102, 'ETIPROP102', 'Etica Profissional e Patentes', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTG103', 'Projeto Integrador em Gestão Empresarial I', 80);
+VALUES (103, 'PROINTG103', 'Projeto Integrador em Gestão Empresarial I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'CONTABI104', 'Contabilidade', 80);
+VALUES (104, 'CONTABI104', 'Contabilidade', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INFAPLG105', 'Informatica Aplicada à Gestão', 80);
+VALUES (105, 'INFAPLG105', 'Informatica Aplicada à Gestão', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECINO106', 'Sociedade, Tecnologia e Inovação', 80);
+VALUES (106, 'TECINO106', 'Sociedade, Tecnologia e Inovação', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATEMAT107', 'Matemática', 80);
+VALUES (107, 'MATEMAT107', 'Matemática', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTG108', 'Projeto Integrador em Gestão Empresarial II', 80);
+VALUES (108, 'PROINTG108', 'Projeto Integrador em Gestão Empresarial II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMORG109', 'Comportamento Organizacional', 80);
+VALUES (109, 'COMORG109', 'Comportamento Organizacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SOCDASO110', 'Sociologia das Organizações', 80);
+VALUES (110, 'SOCDASO110', 'Sociologia das Organizações', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESAMBE111', 'Gestão Ambiental Empresarial', 80);
+VALUES (111, 'GESAMBE111', 'Gestão Ambiental Empresarial', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESTAPLG112', 'Estatística Aplicada à Gestão', 80);
+VALUES (112, 'ESTAPLG112', 'Estatística Aplicada à Gestão', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTG113', 'Projeto Integrador em Gestão Empresarial III', 80);
+VALUES (113, 'PROINTG113', 'Projeto Integrador em Gestão Empresarial III', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESPES114', 'Gestão de Pessoas', 80);
+VALUES (114, 'GESPES114', 'Gestão de Pessoas', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESMAR115', 'Gestão de Marketing', 80);
+VALUES (115, 'GESMAR115', 'Gestão de Marketing', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISMET116', 'Organização, Sistemas e Métodos', 80);
+VALUES (116, 'SISMET116', 'Organização, Sistemas e Métodos', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISINF117', 'Sistemas de Informação', 80);
+VALUES (117, 'SISINF117', 'Sistemas de Informação', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MATFIN118', 'Matematica Financeira', 80);
+VALUES (118, 'MATFIN118', 'Matematica Financeira', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTG119', 'Projeto Integrador em Gestão Empresarial IV', 80);
+VALUES (119, 'PROINTG119', 'Projeto Integrador em Gestão Empresarial IV', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PLAMAR120', 'Planejamento de Marketing', 80);
+VALUES (120, 'PLAMAR120', 'Planejamento de Marketing', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'COMEMP121', 'Comunicação Empresarial', 80);
+VALUES (121, 'COMEMP121', 'Comunicação Empresarial', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DIREMP122', 'Direito Empresarial', 80);
+VALUES (122, 'DIREMP122', 'Direito Empresarial', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTG123', 'Projeto Integrador em Gestão Empresarial V', 80);
+VALUES (123, 'PROINTG123', 'Projeto Integrador em Gestão Empresarial V', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ANAINV124', 'Análise de Investimentos', 80);
+VALUES (124, 'ANAINV124', 'Análise de Investimentos', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESPROO125', 'Gestão da Produção e Operações', 80);
+VALUES (125, 'GESPROO125', 'Gestão da Produção e Operações', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESQUA126', 'Gestão da Qualidade', 80);
+VALUES (126, 'GESQUA126', 'Gestão da Qualidade', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROPESG127', 'Projeto de Pesquisa em Gestão Empresarial', 80);
+VALUES (127, 'PROPESG127', 'Projeto de Pesquisa em Gestão Empresarial', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROINTG128', 'Projeto Integrador em Gestão Empresarial VI', 80);
+VALUES (128, 'PROINTG128', 'Projeto Integrador em Gestão Empresarial VI', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESNEG129', 'Desenvolvimento de Negócios', 80);
+VALUES (129, 'DESNEG129', 'Desenvolvimento de Negócios', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PLAGESE130', 'Planejamento e Gestão Estratégica', 80);
+VALUES (130, 'PLAGESE130', 'Planejamento e Gestão Estratégica', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'NEGINT131', 'Negócios Internacionais', 80);
+VALUES (131, 'NEGINT131', 'Negócios Internacionais', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SISINTG132', 'Sistemas Integrados de Gestão', 80);
+VALUES (132, 'SISINTG132', 'Sistemas Integrados de Gestão', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECINF133', 'Tecnologia da Informação', 80);
+VALUES (133, 'TECINF133', 'Tecnologia da Informação', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIGERE134', 'Química Geral e Experimental', 80);
+VALUES (134, 'QUIGERE134', 'Química Geral e Experimental', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIINO135', 'Química Inorgânica', 80);
+VALUES (135, 'QUIINO135', 'Química Inorgânica', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'FISICA136', 'Física', 80);
+VALUES (136, 'FISICA136', 'Física', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'FUNMATC137', 'Fundamentos de Matematica para Cálculo', 80);
+VALUES (137, 'FUNMATC137', 'Fundamentos de Matematica para Cálculo', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESAMB138', 'Gestão Ambiental', 80);
+VALUES (138, 'GESAMB138', 'Gestão Ambiental', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DESTECA139', 'Desenho Técnico Assistido por Computador', 80);
+VALUES (139, 'DESTECA139', 'Desenho Técnico Assistido por Computador', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIORG140', 'Química Orgânica', 80);
+VALUES (140, 'QUIORG140', 'Química Orgânica', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'DISC141', 'Físico-Química', 80);
+VALUES (141, 'DISC141', 'Físico-Química', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIANA142', 'Química Analítica', 80);
+VALUES (142, 'QUIANA142', 'Química Analítica', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'CALCULO143', 'Cálculo', 80);
+VALUES (143, 'CALCULO143', 'Cálculo', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ANAINS144', 'Análise Instrumental', 80);
+VALUES (144, 'ANAINS144', 'Análise Instrumental', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MANIND145', 'Manutenção Industrial', 80);
+VALUES (145, 'MANIND145', 'Manutenção Industrial', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ENGENE146', 'Engenharia da Energia', 80);
+VALUES (146, 'ENGENE146', 'Engenharia da Energia', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PLACONP147', 'Planejamento e Controle da Produção', 80);
+VALUES (147, 'PLACONP147', 'Planejamento e Controle da Produção', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MICAPLB148', 'Microbiologia Aplicada à Biotecnologia', 80);
+VALUES (148, 'MICAPLB148', 'Microbiologia Aplicada à Biotecnologia', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TRACAL149', 'Transferência de Calor', 80);
+VALUES (149, 'TRACAL149', 'Transferência de Calor', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'MECDOSF150', 'Mecânica dos Fluidos', 80);
+VALUES (150, 'MECDOSF150', 'Mecânica dos Fluidos', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'OPEUNI151', 'Operações Unitarias I', 80);
+VALUES (151, 'OPEUNI151', 'Operações Unitarias I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'QUIMEIA152', 'Química do Meio Ambiente', 80);
+VALUES (152, 'QUIMEIA152', 'Química do Meio Ambiente', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'BIOTECD153', 'Bioquímica e Tecnologia das Fermentações', 80);
+VALUES (153, 'BIOTECD153', 'Bioquímica e Tecnologia das Fermentações', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GEOMIN154', 'Geologia e Mineralogia', 80);
+VALUES (154, 'GEOMIN154', 'Geologia e Mineralogia', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'ESTDES155', 'Estatística Descritiva', 80);
+VALUES (155, 'ESTDES155', 'Estatística Descritiva', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'OPEUNI156', 'Operações Unitarias II', 80);
+VALUES (156, 'OPEUNI156', 'Operações Unitarias II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'CORROSA157', 'Corrosão', 80);
+VALUES (157, 'CORROSA157', 'Corrosão', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROQUI158', 'Processos Químicos I', 80);
+VALUES (158, 'PROQUI158', 'Processos Químicos I', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'CONGARQ159', 'Controle e Garantia da Qualidade', 80);
+VALUES (159, 'CONGARQ159', 'Controle e Garantia da Qualidade', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TECDOSM160', 'Tecnologia dos Materiais', 80);
+VALUES (160, 'TECDOSM160', 'Tecnologia dos Materiais', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'FUNLOG161', 'Fundamentos de Logística', 80);
+VALUES (161, 'FUNLOG161', 'Fundamentos de Logística', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'TRAEFL162', 'Tratamento de Efluentes', 80);
+VALUES (162, 'TRAEFL162', 'Tratamento de Efluentes', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROPETG163', 'Processamento do Petróleo e GAs Natural', 80);
+VALUES (163, 'PROPETG163', 'Processamento do Petróleo e GAs Natural', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'GESECOA164', 'Gestão Econômica e Administrativa na Indústria Química', 80);
+VALUES (164, 'GESECOA164', 'Gestão Econômica e Administrativa na Indústria Química', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'SAUSEGO165', 'Saúde e Segurança Ocupacional', 80);
+VALUES (165, 'SAUSEGO165', 'Saúde e Segurança Ocupacional', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'PROQUI166', 'Processos Químicos II', 80);
+VALUES (166, 'PROQUI166', 'Processos Químicos II', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'LEGNAIN167', 'Legislação na Indústria Química', 80);
+VALUES (167, 'LEGNAIN167', 'Legislação na Indústria Química', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'CONPROQ168', 'Controle de Processos Químicos', 80);
+VALUES (168, 'CONPROQ168', 'Controle de Processos Químicos', 80);
 
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
-VALUES (SQ_DISCIPLINA.NEXTVAL, 'INSIND169', 'Instrumentação Industrial', 80);
+VALUES (169, 'INSIND169', 'Instrumentação Industrial', 80);
 
 -- DISCIPLINA_CURSO
 INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
@@ -3038,7 +3038,7 @@ INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_g
 
 INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
                         id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
-('QUI',790,3,2,900,3);
+('QUI',790,3,2,90,3);
 
 INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
                         id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
@@ -3191,3 +3191,37 @@ INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_g
 INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
                         id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 ('SEX',900,6,2,29,6);
+
+-- PERIODO_LETIVO
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+(1, 2023, 1);
+
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+(2, 2023, 2);
+
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+(3, 2024, 1);
+
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+(4, 2024, 2);
+
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+(5, 2025, 1);
+
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+(6, 2025, 2);
+
+-- TURMA
+-- prc_criar_turmas_curso(curso, periodo, ciclo)
+
+-- 2023/1
+prc_criar_turmas_curso(1, 1, 1);
+prc_criar_turmas_curso(2, 1, 1);
+
+-- 2023/2
+prc_criar_turmas_curso(1, 2, 1);
+prc_criar_turmas_curso(2, 2, 1);
+
+-- OBS: no sistema real, não é garantido que todos os alunos graduaram, por isso o processo de inserir alunos de uma turma anterior segue manual.
+prc_criar_turmas_curso(1, 2, 2);
+prc_criar_turmas_curso(2, 2, 2);

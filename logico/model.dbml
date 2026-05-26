@@ -20,7 +20,7 @@ Table PROFESSOR {
 
 Table CURSO {
   id_curso INTEGER [pk, increment]
-  sg_curso CHAR(10) [not null]
+  sg_curso VARCHAR(10) [not null]
   nm_curso VARCHAR(255) [not null]
   ds_curso VARCHAR(255)
   cd_periodo_curso NUMBER(4) [not null]
@@ -32,20 +32,22 @@ Table CURSO {
 
 Table DISCIPLINA {
   id_disciplina INTEGER [pk, increment]
-  sg_disciplina CHAR(16) [not null]
+  sg_disciplina VARCHAR(16) [not null]
   nm_disciplina VARCHAR(255) [not null]
   ds_disciplina VARCHAR(255)
   qt_carga_horaria_disciplina NUMBER(4) [not null]
   dt_desativacao_disciplina DATE
 }
 
-Table DISCIPLINA_CURSO {
-  id_curso INTEGER [ref: > CURSO.id_curso]
-  id_disciplina INTEGER [ref: > DISCIPLINA.id_disciplina]
-  id_ciclo_disciplina_curso NUMBER(2)
+Table COMPONENTE_CURRICULAR {
+  id_componente_curricular INTEGER [pk]
+  id_curso INTEGER [not null, ref: > CURSO.id_curso]
+  id_disciplina INTEGER [not null, ref: > DISCIPLINA.id_disciplina]
+  id_professor INTEGER [not null, ref: > PROFESSOR.id_professor]
+  id_ciclo_componente_curricular NUMBER(2) [not null]
 
   indexes {
-    (id_curso, id_disciplina, id_ciclo_disciplina_curso) [pk]
+    (id_curso, id_disciplina, id_ciclo_componente_curricular) [unique, name: 'uk_componente_curricular']
   }
 }
 
@@ -53,9 +55,7 @@ Table GRADE_CURSO {
   dd_semana_grade_curso CHAR(3) [not null]
   hr_inicio_grade_curso NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
   cd_sala_grade_curso VARCHAR(20) [not null]
-  id_ciclo_disciplina_curso NUMBER(2) [not null]
-  id_curso INTEGER [not null]
-  id_disciplina INTEGER [not null]
+  id_componente_curricular INTEGER [not null, ref: > COMPONENTE_CURRICULAR.id_componente_curricular]
 
   indexes {
     (dd_semana_grade_curso, hr_inicio_grade_curso,cd_sala_grade_curso) [pk]
@@ -64,7 +64,6 @@ Table GRADE_CURSO {
     `hr_inicio_grade_curso BETWEEN 0 AND 1440` [name: 'ck_hora']
   }
 }
-Ref: GRADE_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso) > DISCIPLINA_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso)
 
 Table PERIODO_LETIVO {
   id_periodo_letivo INTEGER [pk]
@@ -81,19 +80,22 @@ Table PERIODO_LETIVO {
 Table TURMA {
   id_turma INTEGER [pk]
   qt_vagas_turma NUMBER(3) [not null]
+  id_ciclo_turma NUMBER(2) [not null]
 
-  id_curso INTEGER [not null]
-  id_disciplina INTEGER [not null]
-  id_ciclo_disciplina_curso NUMBER(2) [not null]
-  id_periodo_letivo INTEGER [not null, ref: > PERIODO_LETIVO.id_periodo_letivo]
+  id_curso INTEGER [not null, ref: > CURSO.id_curso]
+  id_disciplina INTEGER [not null, ref: > DISCIPLINA.id_disciplina]
   id_professor INTEGER [not null, ref: > PROFESSOR.id_professor]
+  id_periodo_letivo INTEGER [not null, ref: > PERIODO_LETIVO.id_periodo_letivo]
+
+  indexes {
+    (id_curso, id_disciplina, id_ciclo_turma, id_periodo_letivo) [unique, name: 'uk_turma']
+  }
 }
-Ref: TURMA.(id_curso,id_disciplina,id_ciclo_disciplina_curso) > DISCIPLINA_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso)
 
 Table MATRICULA {
   id_matricula INTEGER [pk]
-  id_turma INTEGER [not null, ref: > TURMA.id_turma]
   id_aluno INTEGER [not null, ref: > ALUNO.id_aluno]
+  id_turma INTEGER [not null, ref: > TURMA.id_turma]
   INDEXES {
     (id_turma, id_aluno) [unique]
   }
@@ -110,6 +112,10 @@ Table GRADE_TURMA {
     `dd_semana_grade_turma IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'ck_dia_semana']
     `hr_inicio_grade_turma BETWEEN 0 AND 1440` [name: 'ck_hora']
   }
+
+  indexes {
+    (dd_semana_grade_turma,hr_inicio_grade_turma,cd_sala_grade_turma,id_turma) [unique, name: '']
+  }
 }
 
 Table AVALIACAO {
@@ -121,13 +127,30 @@ Table AVALIACAO {
   dt_hr_avaliacao DATE [not null]
   cd_tipo_avaliacao NUMBER(4) [not null]
 
-  id_turma INTEGER [not null]
+  id_turma INTEGER [not null, ref: > TURMA.id_turma]
+
+  indexes {
+    (id_turma, dt_hr_avaliacao) [unique, name: 'uk_avaliacao']
+  }
 }
-Ref: AVALIACAO.id_turma > TURMA.id_turma
+
+Table AVALIACAO_RESULTADO {
+  id_matricula INTEGER [not null]
+  id_avaliacao INTEGER [not null]
+  id_turma INTEGER [not null, note: 'Atributo estrangeiro passado para garantir consistência sem precisar de Triggers']
+  qt_nota_avaliacao_aluno NUMBER(4,2) [not null]
+
+  indexes {
+    (id_avaliacao, id_matricula) [pk]
+  }
+}
+Ref: AVALIACAO_RESULTADO.(id_matricula,id_turma) > MATRICULA.(id_matricula,id_turma)
+Ref: AVALIACAO_RESULTADO.(id_avaliacao,id_turma) > AVALIACAO.(id_avaliacao,id_turma)
 
 Table REGISTRO_AULA {
   dt_registro_aula DATE [not null]
-  id_grade_turma INTEGER [not null, ref: > GRADE_TURMA.id_grade_turma]
+  id_grade_turma INTEGER [not null]
+  id_turma INTEGER [not null, note: 'Atributo estrangeiro passado para garantir consistência sem precisar de Triggers']
 
   indexes {
     (dt_registro_aula, id_grade_turma) [pk]
@@ -136,25 +159,19 @@ Table REGISTRO_AULA {
     `dt_registro_aula=TRUNC(dt_registro_aula)` [name: 'ck_date_only']
   }
 }
+Ref: REGISTRO_AULA.(id_grade_turma,id_turma) > GRADE_TURMA.(id_grade_turma,id_turma)
 
-Table AVALIACAO_RESULTADO {
-  id_matricula INTEGER [not null, ref: > MATRICULA.id_matricula]
-  id_avaliacao INTEGER [not null, ref: > AVALIACAO.id_avaliacao]
-  qt_nota_avaliacao_aluno NUMBER(4,2) [not null]
-
-  indexes {
-    (id_avaliacao, id_matricula) [pk]
-  }
-}
-
-Table ALUNO_REGISTRO_AULA {
+Table REGISTRO_AULA_MATRICULA {
+  id_matricula INTEGER [not null]
   dt_registro_aula DATE [not null]
-  id_grade_turma INTEGER [not null]
-  id_matricula INTEGER [not null, Ref: > MATRICULA.id_matricula]
+  id_grade_turma INTEGER [not null, note: 'Atributo estrangeiro passado para garantir consistência sem precisar de Triggers']
+  id_turma INTEGER [not null]
+  ic_presente_ausente NUMBER(1) [not null, default: 1]
 
   indexes {
     (dt_registro_aula, id_grade_turma, id_matricula) [pk]
   }
 }
-Ref: ALUNO_REGISTRO_AULA.(dt_registro_aula, id_grade_turma)
-    > REGISTRO_AULA.(dt_registro_aula, id_grade_turma)
+Ref: REGISTRO_AULA_MATRICULA.(dt_registro_aula, id_grade_turma, id_turma)
+    > REGISTRO_AULA.(dt_registro_aula, id_grade_turma, id_turma)
+Ref: REGISTRO_AULA_MATRICULA.(id_matricula,id_turma) > MATRICULA.(id_matricula,id_turma)
