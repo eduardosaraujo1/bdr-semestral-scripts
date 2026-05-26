@@ -1866,16 +1866,7 @@ INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_
 VALUES (SQ_CURSO.NEXTVAL, 'ADS', 'Analise e Desenvolvimento de Sistemas', 'Curso superior de tecnologia focado em desenvolvimento de software e sistemas computacionais.', 1, 2400, 6, 1);
 
 INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_carga_horaria_curso, qt_semestre_curso, cd_modalidade_curso)
-VALUES (SQ_CURSO.NEXTVAL, 'COMEX', 'Comércio Exterior', 'Curso voltado para operações comerciais internacionais e logística.', 1, 2400, 6, 1);
-
-INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_carga_horaria_curso, qt_semestre_curso, cd_modalidade_curso)
 VALUES (SQ_CURSO.NEXTVAL, 'DSM', 'Desenvolvimento de Software Multiplataforma', 'Curso focado no desenvolvimento de aplicações web, mobile e multiplataforma.', 1, 2400, 6, 1);
-
-INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_carga_horaria_curso, qt_semestre_curso, cd_modalidade_curso)
-VALUES (SQ_CURSO.NEXTVAL, 'GE', 'Gestão Empresarial', 'Curso voltado para administração, gestão estratégica e negócios.', 1, 2400, 6, 1);
-
-INSERT INTO CURSO (id_curso, sg_curso, nm_curso, ds_curso, cd_periodo_curso, qt_carga_horaria_curso, qt_semestre_curso, cd_modalidade_curso)
-VALUES (SQ_CURSO.NEXTVAL, 'PQ', 'Processos Químicos', 'Curso focado em processos industriais químicos e operações industriais.', 1, 2400, 6, 1);
 
 -- TABELA DISCIPINA
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina)
@@ -2386,3 +2377,250 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'INSIND169', 'Instrumentação Industrial', 80);
 
 -- DISCIPLINA_CURSO
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,1,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,2,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,3,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,4,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,5,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,6,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,7,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,8,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,9,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,10,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,11,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,12,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,13,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,14,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,15,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,16,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,17,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,18,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,19,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,20,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,21,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,22,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,23,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,24,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,25,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,26,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,27,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,28,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,29,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,30,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,31,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,32,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,33,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,34,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,35,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,36,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,37,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,38,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,39,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,40,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,41,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(1,42,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,2,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,10,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,79,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,1,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,80,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,81,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,82,1);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,83,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,84,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,8,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,11,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,23,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,85,2);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,86,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,87,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,88,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,89,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,26,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,7,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,90,3);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,91,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,92,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,25,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,24,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,93,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,14,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,37,4);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,94,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,95,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,96,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,97,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,98,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,21,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,99,5);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,100,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,101,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,33,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,29,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,102,6);
+
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+(2,28,6);
+
+-- GRADE CURSO
