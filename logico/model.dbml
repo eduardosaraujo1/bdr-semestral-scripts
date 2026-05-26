@@ -11,10 +11,11 @@ Table ALUNO {
 Table PROFESSOR {
   id_professor INTEGER [pk]
   nm_professor VARCHAR(255) [not null]
-  cpf_professor CHAR(11) [not null, unique]
+  cd_cpf_professor CHAR(11) [not null, unique]
   nm_email_professor VARCHAR(255) [not null, unique]
   nm_especialidade_professor VARCHAR(255) [not null]
   dt_admissao_professor DATE [not null]
+  dt_demissao_professor DATE
 }
 
 Table CURSO {
@@ -59,6 +60,9 @@ Table GRADE_CURSO {
   indexes {
     (dd_semana_grade_curso, hr_inicio_grade_curso,cd_sala_grade_curso) [pk]
   }
+  checks {
+    `hr_inicio_grade_curso BETWEEN 0 AND 1440` [name: 'ck_hora']
+  }
 }
 Ref: GRADE_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso) > DISCIPLINA_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso)
 
@@ -76,7 +80,6 @@ Table PERIODO_LETIVO {
 
 Table TURMA {
   id_turma INTEGER [pk]
-  id_ciclo_turma NUMBER(2) [not null]
   qt_vagas_turma NUMBER(3) [not null]
 
   id_curso INTEGER [not null]
@@ -99,12 +102,13 @@ Table MATRICULA {
 Table GRADE_TURMA {
   id_grade_turma INTEGER [pk]
   dd_semana_grade_turma CHAR(3) [not null]
-  hr_inicio_grade_turma NUMBER(4) [not null, check: `hr_inicio_grade_turma BETWEEN 0 AND 1440`] // NUMBER(4): minutos depois da meia noite
+  hr_inicio_grade_turma NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
   cd_sala_grade_turma VARCHAR(20) [not null]
   id_turma INTEGER [not null, ref: > TURMA.id_turma]
 
   checks {
-    `dd_semana_grade_turma IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'chk_dia_semana']
+    `dd_semana_grade_turma IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'ck_dia_semana']
+    `hr_inicio_grade_turma BETWEEN 0 AND 1440` [name: 'ck_hora']
   }
 }
 
@@ -122,11 +126,14 @@ Table AVALIACAO {
 Ref: AVALIACAO.id_turma > TURMA.id_turma
 
 Table REGISTRO_AULA {
-  dt_registro_aula DATE [not null, check: `dt_registro_aula=TRUNC(dt_registro_aula)`]
+  dt_registro_aula DATE [not null]
   id_grade_turma INTEGER [not null, ref: > GRADE_TURMA.id_grade_turma]
 
   indexes {
     (dt_registro_aula, id_grade_turma) [pk]
+  }
+  checks {
+    `dt_registro_aula=TRUNC(dt_registro_aula)` [name: 'ck_date_only']
   }
 }
 

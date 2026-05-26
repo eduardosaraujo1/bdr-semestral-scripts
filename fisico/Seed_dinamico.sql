@@ -1800,64 +1800,64 @@ INSERT INTO ALUNO (id_aluno, nm_aluno, cd_cpf_aluno, dt_nascimento_aluno, nm_ema
 VALUES (SQ_ALUNO.NEXTVAL, 'Isabela Pinto', '97465021820', TO_DATE('1980-10-18', 'YYYY-MM-DD'), 'xviana@gmail.com', 'Area Rocha, Mantiqueira, 61995-305 da Rocha do Campo / PI', 1);
 
 -- TABELA PROFESSOR
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Carlos Henrique Martins', '12345678901', 'carlos.martins@fatec.edu.br', 'Engenharia de Software', TO_DATE('2020-02-10', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Fernanda Oliveira Souza', '12345678902', 'fernanda.souza@fatec.edu.br', 'Algoritmos e Programação', TO_DATE('2019-03-12', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Ricardo Almeida Lima', '12345678903', 'ricardo.lima@fatec.edu.br', 'Banco de Dados', TO_DATE('2018-08-05', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Juliana Ferreira Costa', '12345678904', 'juliana.costa@fatec.edu.br', 'Computação em Nuvem', TO_DATE('2021-01-15', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'André Luiz Pereira', '12345678905', 'andre.pereira@fatec.edu.br', 'Dispositivos Móveis', TO_DATE('2017-06-20', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Marina Gomes Rocha', '12345678906', 'marina.rocha@fatec.edu.br', 'Interação Humano Computador', TO_DATE('2022-04-10', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Paulo Roberto Dias', '12345678907', 'paulo.dias@fatec.edu.br', 'Estrutura de Dados', TO_DATE('2016-11-02', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Camila Nunes Barbosa', '12345678908', 'camila.barbosa@fatec.edu.br', 'Logística', TO_DATE('2020-09-01', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Lucas Almeida Ferreira', '12345678909', 'lucas.ferreira@fatec.edu.br', 'Redes de Computadores', TO_DATE('2019-02-18', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Patricia Mendes Silva', '12345678910', 'patricia.silva@fatec.edu.br', 'Gestão de Projetos', TO_DATE('2021-07-05', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Roberto César Nogueira', '12345678911', 'roberto.nogueira@fatec.edu.br', 'Segurança da Informação', TO_DATE('2018-04-22', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Tatiane Ribeiro Costa', '12345678912', 'tatiane.costa@fatec.edu.br', 'Inteligência Artificial', TO_DATE('2022-01-10', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Eduardo Viana Lopes', '12345678913', 'eduardo.lopes@fatec.edu.br', 'Desenvolvimento Web', TO_DATE('2020-08-14', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Simone Cristina Prado', '12345678914', 'simone.prado@fatec.edu.br', 'Matematica Aplicada', TO_DATE('2017-03-27', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Marcelo Augusto Teixeira', '12345678915', 'marcelo.teixeira@fatec.edu.br', 'Sistemas Operacionais', TO_DATE('2016-09-12', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Vanessa Cardoso Almeida', '12345678916', 'vanessa.almeida@fatec.edu.br', 'Qualidade de Software', TO_DATE('2024-02-06', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Bruno Henrique Moraes', '12345678917', 'bruno.moraes@fatec.edu.br', 'Computação Cognitiva', TO_DATE('2021-11-01', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Renata Figueiredo Campos', '12345678918', 'renata.campos@fatec.edu.br', 'Empreendedorismo e Inovação', TO_DATE('2019-06-03', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Gustavo Pereira Batista', '12345678919', 'gustavo.batista@fatec.edu.br', 'Arquitetura de Computadores', TO_DATE('2018-10-16', 'YYYY-MM-DD'));
 
-INSERT INTO PROFESSOR (id_professor, nm_professor, cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
+INSERT INTO PROFESSOR (id_professor, nm_professor, cd_cpf_professor, nm_email_professor, nm_especialidade_professor, dt_admissao_professor)
 VALUES (SQ_PROFESSOR.NEXTVAL, 'Aline Martins Gonçalves', '12345678920', 'aline.goncalves@fatec.edu.br', 'Estatística Aplicada', TO_DATE('2020-05-25', 'YYYY-MM-DD'));
 
 
@@ -2377,250 +2377,817 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 VALUES (SQ_DISCIPLINA.NEXTVAL, 'INSIND169', 'Instrumentação Industrial', 80);
 
 -- DISCIPLINA_CURSO
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,1,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,2,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,3,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,4,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,5,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,6,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,7,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,8,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,9,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,10,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,11,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,12,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,13,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,14,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,15,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,16,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,17,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,18,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,19,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,20,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,21,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,22,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,23,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,24,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,25,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,26,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,27,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,28,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,29,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,30,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,31,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,32,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,33,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,34,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,35,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,36,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,37,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,38,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,39,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,40,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,41,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (1,42,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,2,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,10,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,79,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,1,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,80,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,81,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,82,1);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,83,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,84,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,8,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,11,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,23,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,85,2);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,86,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,87,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,88,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,89,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,26,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,7,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,90,3);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,91,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,92,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,25,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,24,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,93,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,14,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,37,4);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,94,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,95,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,96,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,97,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,98,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,21,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,99,5);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,100,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,101,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,33,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,29,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,102,6);
 
-INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso)
+INSERT INTO DISCIPLINA_CURSO (id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
 (2,28,6);
 
 -- GRADE CURSO
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1140,1,1,1,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1250,1,1,1,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1140,1,1,2,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1250,1,1,2,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1140,1,1,3,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1250,1,1,3,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1140,1,1,4,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1250,1,1,4,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1140,1,1,5,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1250,1,1,5,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',590,1,1,6,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',700,1,1,7,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1140,2,1,8,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1250,2,1,8,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1140,2,1,9,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1250,2,1,9,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1140,2,1,10,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1250,2,1,10,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1140,2,1,11,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1250,2,1,11,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1140,2,1,12,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1250,2,1,12,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',590,2,1,13,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',700,2,1,14,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1140,3,1,15,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1250,3,1,15,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1140,3,1,16,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1250,3,1,16,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1140,3,1,17,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1250,3,1,17,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1140,3,1,18,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1250,3,1,18,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1140,3,1,19,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1250,3,1,19,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',590,3,1,20,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',700,3,1,21,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1140,4,1,22,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1250,4,1,22,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1140,4,1,23,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1250,4,1,23,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1140,4,1,24,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1250,4,1,24,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1140,4,1,25,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1250,4,1,25,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1140,4,1,26,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1250,4,1,26,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',700,4,1,27,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',810,1,1,28,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1140,5,1,29,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1250,5,1,29,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1140,5,1,30,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1250,5,1,30,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1140,5,1,31,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1250,5,1,31,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1140,5,1,32,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1250,5,1,32,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1140,5,1,33,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1250,5,1,33,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',700,5,1,34,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',810,2,1,35,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1140,6,1,36,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1250,6,1,36,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1140,6,1,37,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1250,6,1,37,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1140,6,1,38,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1250,6,1,38,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1140,6,1,39,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1250,6,1,39,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1140,6,1,40,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',1250,6,1,40,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',590,4,1,41,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SAB',700,6,1,42,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',790,1,2,2,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',900,1,2,2,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1010,1,2,10,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',790,1,2,79,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',900,1,2,79,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',790,1,2,80,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',900,1,2,80,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1010,1,2,81,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',790,1,2,82,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',900,1,2,82,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',790,1,2,1,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',900,1,2,1,1);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',790,2,2,83,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',900,2,2,83,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',790,2,2,8,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',900,2,2,8,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',790,2,2,23,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',900,2,2,23,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1010,2,2,85,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',790,2,2,11,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',900,2,2,11,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',790,2,2,84,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',900,2,2,84,2);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',790,3,2,86,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',900,3,2,86,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1010,2,2,87,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',790,3,2,88,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',900,3,2,88,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',790,3,2,26,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',900,3,2,26,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1010,3,2,7,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',790,3,2,900,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',900,3,2,90,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',790,3,2,89,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',900,3,2,89,3);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',790,4,2,91,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',900,4,2,91,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1010,3,2,14,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',790,4,2,25,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',900,4,2,25,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1010,1,2,24,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',790,4,2,93,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',900,4,2,93,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',790,4,2,37,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',900,4,2,37,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',790,4,2,92,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',900,4,2,92,4);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',790,5,2,94,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',900,5,2,94,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',1010,4,2,95,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',790,5,2,96,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',900,5,2,96,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',1010,2,2,97,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',790,5,2,98,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',900,5,2,98,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',790,5,2,99,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',900,5,2,99,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',790,5,2,21,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',900,5,2,21,5);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',790,6,2,100,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEG',900,6,2,100,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',790,6,2,33,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('TER',900,6,2,33,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',790,6,2,102,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',900,6,2,102,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUA',1010,4,2,28,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',900,6,2,101,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('QUI',1010,1,2,101,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',790,6,2,29,6);
+
+INSERT INTO GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso,
+                        id_curso, id_disciplina, id_ciclo_disciplina_curso) VALUES
+('SEX',900,6,2,29,6);
