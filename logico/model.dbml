@@ -42,30 +42,35 @@ Table DISCIPLINA_CURSO {
   id_curso INTEGER [ref: > CURSO.id_curso]
   id_disciplina INTEGER [ref: > DISCIPLINA.id_disciplina]
   id_ciclo_disciplina_curso NUMBER(2)
+
   indexes {
-    (id_curso, id_disciplina) [pk]
+    (id_curso, id_disciplina, id_ciclo_disciplina_curso) [pk]
   }
 }
 
-Table GRADE_ATUAL {
-  dd_semana_grade_atual CHAR(3) [not null]
-  hr_inicio_grade_atual NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
-  cd_sala_grade_atual VARCHAR(20) [not null]
+Table GRADE_CURSO {
+  dd_semana_grade_curso CHAR(3) [not null]
+  hr_inicio_grade_curso NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
+  cd_sala_grade_curso VARCHAR(20) [not null]
+  id_ciclo_disciplina_curso NUMBER(2) [not null]
   id_curso INTEGER [not null]
   id_disciplina INTEGER [not null]
 
   indexes {
-    (dd_semana_grade_atual, hr_inicio_grade_atual,cd_sala_grade_atual) [pk]
+    (dd_semana_grade_curso, hr_inicio_grade_curso,cd_sala_grade_curso) [pk]
   }
 }
-Ref: GRADE_ATUAL.(id_curso,id_disciplina) > DISCIPLINA_CURSO.(id_curso,id_disciplina)
+Ref: GRADE_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso) > DISCIPLINA_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso)
 
 Table PERIODO_LETIVO {
   id_periodo_letivo INTEGER [pk]
-  aa_periodo_letivo NUMBER(4)
-  semestre_periodo_letivo NUMBER(1) [check: `semestre_periodo_letivo IN (1,2)`]
+  aa_periodo_letivo NUMBER(4) [not null]
+  semestre_periodo_letivo NUMBER(1) [not null]
   indexes {
     (aa_periodo_letivo,semestre_periodo_letivo) [unique]
+  }
+  checks {
+    `semestre_periodo_letivo IN (1,2)` [name: 'chk_semestre']
   }
 }
 
@@ -74,11 +79,13 @@ Table TURMA {
   id_ciclo_turma NUMBER(2) [not null]
   qt_vagas_turma NUMBER(3) [not null]
 
+  id_curso INTEGER [not null]
+  id_disciplina INTEGER [not null]
+  id_ciclo_disciplina_curso NUMBER(2) [not null]
   id_periodo_letivo INTEGER [not null, ref: > PERIODO_LETIVO.id_periodo_letivo]
-  id_curso INTEGER [not null, ref: > CURSO.id_curso]
-  id_disciplina INTEGER [not null, ref: > DISCIPLINA.id_disciplina]
   id_professor INTEGER [not null, ref: > PROFESSOR.id_professor]
 }
+Ref: TURMA.(id_curso,id_disciplina,id_ciclo_disciplina_curso) > DISCIPLINA_CURSO.(id_curso,id_disciplina,id_ciclo_disciplina_curso)
 
 Table MATRICULA {
   id_matricula INTEGER [pk]
@@ -89,15 +96,15 @@ Table MATRICULA {
   }
 }
 
-Table OFERTA {
-  id_oferta INTEGER [pk]
-  dd_semana_oferta CHAR(3) [not null]
-  hr_inicio_oferta NUMBER(4) [not null, check: `hr_inicio_oferta BETWEEN 0 AND 1440`] // NUMBER(4): minutos depois da meia noite
-  cd_sala_oferta VARCHAR(20) [not null]
+Table GRADE_TURMA {
+  id_grade_turma INTEGER [pk]
+  dd_semana_grade_turma CHAR(3) [not null]
+  hr_inicio_grade_turma NUMBER(4) [not null, check: `hr_inicio_grade_turma BETWEEN 0 AND 1440`] // NUMBER(4): minutos depois da meia noite
+  cd_sala_grade_turma VARCHAR(20) [not null]
   id_turma INTEGER [not null, ref: > TURMA.id_turma]
 
   checks {
-    `dd_semana_oferta IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'chk_dia_semana']
+    `dd_semana_grade_turma IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'chk_dia_semana']
   }
 }
 
@@ -116,10 +123,10 @@ Ref: AVALIACAO.id_turma > TURMA.id_turma
 
 Table REGISTRO_AULA {
   dt_registro_aula DATE [not null, check: `dt_registro_aula=TRUNC(dt_registro_aula)`]
-  id_oferta INTEGER [not null, ref: > OFERTA.id_oferta]
+  id_grade_turma INTEGER [not null, ref: > GRADE_TURMA.id_grade_turma]
 
   indexes {
-    (dt_registro_aula, id_oferta) [pk]
+    (dt_registro_aula, id_grade_turma) [pk]
   }
 }
 
@@ -135,12 +142,12 @@ Table AVALIACAO_RESULTADO {
 
 Table ALUNO_REGISTRO_AULA {
   dt_registro_aula DATE [not null]
-  id_oferta INTEGER [not null]
+  id_grade_turma INTEGER [not null]
   id_matricula INTEGER [not null, Ref: > MATRICULA.id_matricula]
 
   indexes {
-    (dt_registro_aula, id_oferta, id_matricula) [pk]
+    (dt_registro_aula, id_grade_turma, id_matricula) [pk]
   }
 }
-Ref: ALUNO_REGISTRO_AULA.(dt_registro_aula, id_oferta)
-    > REGISTRO_AULA.(dt_registro_aula, id_oferta)
+Ref: ALUNO_REGISTRO_AULA.(dt_registro_aula, id_grade_turma)
+    > REGISTRO_AULA.(dt_registro_aula, id_grade_turma)
