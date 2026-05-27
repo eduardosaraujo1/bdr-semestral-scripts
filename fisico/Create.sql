@@ -77,9 +77,9 @@ CREATE TABLE GRADE_CURSO (
 CREATE TABLE PERIODO_LETIVO (
   id_periodo_letivo INTEGER PRIMARY KEY,
   aa_periodo_letivo NUMBER(4) NOT NULL,
-  semestre_periodo_letivo NUMBER(1) NOT NULL,
-  CONSTRAINT chk_semestre CHECK (semestre_periodo_letivo IN (1,2)),
-  CONSTRAINT uk_periodo_letivo UNIQUE (aa_periodo_letivo, semestre_periodo_letivo)
+  id_semestre_periodo_letivo NUMBER(1) NOT NULL,
+  CONSTRAINT chk_semestre CHECK (id_semestre_periodo_letivo IN (1,2)),
+  CONSTRAINT uk_periodo_letivo UNIQUE (aa_periodo_letivo, id_semestre_periodo_letivo)
 );
 
 CREATE TABLE TURMA (

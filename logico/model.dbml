@@ -69,12 +69,12 @@ Table GRADE_CURSO {
 Table PERIODO_LETIVO {
   id_periodo_letivo INTEGER [pk]
   aa_periodo_letivo NUMBER(4) [not null]
-  semestre_periodo_letivo NUMBER(1) [not null]
+  id_semestre_periodo_letivo NUMBER(1) [not null]
   indexes {
-    (aa_periodo_letivo,semestre_periodo_letivo) [unique, name: 'uk_periodo_letivo']
+    (aa_periodo_letivo,id_semestre_periodo_letivo) [unique, name: 'uk_periodo_letivo']
   }
   checks {
-    `semestre_periodo_letivo IN (1,2)` [name: 'chk_semestre']
+    `id_semestre_periodo_letivo IN (1,2)` [name: 'chk_semestre']
   }
 }
 

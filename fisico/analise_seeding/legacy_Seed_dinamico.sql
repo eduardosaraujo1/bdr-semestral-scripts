@@ -1612,22 +1612,22 @@ INSERT INTO GRADE_CURSO (id_grade_curso, dd_semana_grade_curso, hr_inicio_grade_
 
 
 -- PERIODO_LETIVO
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES
 (1, 2023, 1);
 
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES
 (2, 2023, 2);
 
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES
 (3, 2024, 1);
 
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES
 (4, 2024, 2);
 
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES
 (5, 2025, 1);
 
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES
 (6, 2025, 2);
 
 -- TURMA
@@ -1808,7 +1808,7 @@ SELECT
             ADD_MONTHS(
                 TO_DATE('01/' || LPAD(
                     CASE
-                        WHEN pl.semestre_periodo_letivo = 1 THEN 1   -- semestre 1 começa em Janeiro
+                        WHEN pl.id_semestre_periodo_letivo = 1 THEN 1   -- semestre 1 começa em Janeiro
                         ELSE 7                                        -- semestre 2 começa em Julho
                     END,
                 2, '0') || '/' || pl.aa_periodo_letivo, 'DD/MM/YYYY'),
@@ -1882,7 +1882,7 @@ datas_inicio AS (
         TO_DATE(
             '01/' ||
             LPAD(
-                CASE pl.semestre_periodo_letivo
+                CASE pl.id_semestre_periodo_letivo
                     WHEN 1 THEN 1
                     ELSE 7
                 END,

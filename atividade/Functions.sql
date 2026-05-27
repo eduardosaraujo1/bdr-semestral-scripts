@@ -7,7 +7,7 @@ IS
 BEGIN
     SELECT TO_DATE(
         '01/' ||
-        CASE semestre_periodo_letivo
+        CASE id_semestre_periodo_letivo
             WHEN 1 THEN '01'
             WHEN 2 THEN '07'
         END || '/' || aa_periodo_letivo,

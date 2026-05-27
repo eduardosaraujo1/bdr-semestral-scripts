@@ -443,12 +443,12 @@ INSERT INTO GRADE_CURSO (id_grade_curso, dd_semana_grade_curso, hr_inicio_grade_
 INSERT INTO GRADE_CURSO (id_grade_curso, dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso, id_componente_curricular) VALUES (142,'SEX',900,6,80);
 
 -- PERIODO_LETIVO
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES (1, 2023, 1);
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES (2, 2023, 2);
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES (3, 2024, 1);
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES (4, 2024, 2);
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES (5, 2025, 1);
-INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, semestre_periodo_letivo) VALUES (6, 2025, 2);
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES (1, 2023, 1);
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES (2, 2023, 2);
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES (3, 2024, 1);
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES (4, 2024, 2);
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES (5, 2025, 1);
+INSERT INTO PERIODO_LETIVO (id_periodo_letivo, aa_periodo_letivo, id_semestre_periodo_letivo) VALUES (6, 2025, 2);
 -- TURMA
 INSERT INTO TURMA (id_turma, qt_vagas_turma, id_ciclo_turma, id_curso, id_disciplina, id_professor, id_periodo_letivo) VALUES (1, 20, 1, 1, 1, 5, 1);
 INSERT INTO TURMA (id_turma, qt_vagas_turma, id_ciclo_turma, id_curso, id_disciplina, id_professor, id_periodo_letivo) VALUES (2, 20, 1, 1, 2, 3, 1);
@@ -1863,7 +1863,7 @@ IS
 BEGIN
     SELECT TO_DATE(
         '01/' ||
-        CASE semestre_periodo_letivo
+        CASE id_semestre_periodo_letivo
             WHEN 1 THEN '01'
             WHEN 2 THEN '07'
         END || '/' || aa_periodo_letivo,
