@@ -1,56 +1,21 @@
-CREATE OR REPLACE PROCEDURE prc_criar_turmas_curso(
-    p_id_curso IN INTEGER,
-    p_id_periodo_letivo IN INTEGER,
-    p_id_ciclo_turma IN NUMBER
-) IS
+CREATE OR REPLACE FUNCTION fn_data_inicio_periodo_letivo (
+    p_id_periodo_letivo IN PERIODO_LETIVO.id_periodo_letivo%TYPE
+)
+RETURN DATE
+IS
+    v_data_inicio DATE;
 BEGIN
-    INSERT INTO TURMA (
-        id_turma,
-        qt_vagas_turma,
-        id_ciclo_turma,
-        id_curso,
-        id_disciplina,
-        id_professor,
-        id_periodo_letivo
+    SELECT TO_DATE(
+        '01/' ||
+        CASE semestre_periodo_letivo
+            WHEN 1 THEN '01'
+            WHEN 2 THEN '07'
+        END || '/' || aa_periodo_letivo,
+        'DD/MM/YYYY'
     )
-    SELECT
-        SQ_TURMA.NEXTVAL,
-        20,
-        p_id_ciclo_turma,
-        cc.id_curso,
-        cc.id_disciplina,
-        cc.id_professor,
-        p_id_periodo_letivo
-    FROM COMPONENTE_CURRICULAR cc
-    WHERE cc.id_curso = p_id_curso
-      AND cc.id_ciclo_componente_curricular = p_id_ciclo_turma;
+    INTO v_data_inicio
+    FROM PERIODO_LETIVO
+    WHERE id_periodo_letivo = p_id_periodo_letivo;
 
-    INSERT INTO GRADE_TURMA (
-        id_grade_turma,
-        dd_semana_grade_turma,
-        hr_inicio_grade_turma,
-        cd_sala_grade_turma,
-        id_turma
-    )
-    SELECT
-        SQ_GRADE_TURMA.NEXTVAL,
-        gc.dd_semana_grade_curso,
-        gc.hr_inicio_grade_curso,
-        gc.cd_sala_grade_curso,
-        t.id_turma
-    FROM COMPONENTE_CURRICULAR cc
-    JOIN GRADE_CURSO gc
-        ON gc.id_componente_curricular = cc.id_componente_curricular
-    JOIN TURMA t
-        ON t.id_curso = cc.id_curso
-       AND t.id_disciplina = cc.id_disciplina
-       AND t.id_professor = cc.id_professor
-       AND t.id_ciclo_turma = p_id_ciclo_turma
-       AND t.id_periodo_letivo = p_id_periodo_letivo
-    WHERE cc.id_curso = p_id_curso
-      AND cc.id_ciclo_componente_curricular = p_id_ciclo_turma;
-
-
-    COMMIT;
+    RETURN v_data_inicio;
 END;
-/
