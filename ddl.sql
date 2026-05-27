@@ -2104,17 +2104,15 @@ SELECT
     ra.dt_registro_aula,
     ra.id_grade_turma,
     CASE
-        -- 0 = ausente quando hash < 30  (~30% de ausência)
-        -- 1 = presente caso contrário   (~70% de presença)
         WHEN MOD(
-            ROW_NUMBER() OVER (PARTITION BY ra.dt_registro_aula, ra.id_grade_turma ORDER BY m.id_matricula)
-            * 1103515245 + 12345
-        , 97) < 30
+            (ROW_NUMBER() OVER (ORDER BY ra.id_grade_turma))
+            * 1103515245 + 12345, 97) < 30
         THEN 0
         ELSE 1
-    END AS ic_ausente_presente
+    END ic_ausente_presente
 FROM REGISTRO_AULA ra
 JOIN GRADE_TURMA gt
     ON gt.id_grade_turma = ra.id_grade_turma
 JOIN MATRICULA m
-    ON m.id_turma = gt.id_turma;
+    ON m.id_turma = gt.id_turma
+ORDER BY 1;

@@ -45,7 +45,6 @@ END;
 /
 
 -- Função: Determinar situação do aluno
-
 CREATE OR REPLACE FUNCTION fn_situacao_aluno (
     p_id_matricula IN MATRICULA.id_matricula%TYPE
 )
