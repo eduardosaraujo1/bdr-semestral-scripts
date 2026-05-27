@@ -1783,3 +1783,155 @@ FROM (
         t.id_periodo_letivo,
         t.id_turma
 ) x;
+
+-- AVALIACAO e
+-- ============================================================
+-- PASSO 1: Inserir 2 avaliações por turma
+-- ============================================================
+INSERT INTO AVALIACAO (
+    id_avaliacao,
+    ds_avaliacao,
+    qt_peso_avaliacao,
+    qt_nota_maxima_avaliacao,
+    dt_hr_avaliacao,
+    cd_tipo_avaliacao,
+    id_turma
+)
+SELECT
+    SQ_AVALIACAO.NEXTVAL,
+    provas.ds_avaliacao,
+    1                          AS qt_peso_avaliacao,
+    10                         AS qt_nota_maxima_avaliacao,
+    -- Data base: 01/MM/AAAA do período letivo + N meses, com hora vinda de GRADE_TURMA
+    TO_DATE(
+        TO_CHAR(
+            ADD_MONTHS(
+                TO_DATE('01/' || LPAD(
+                    CASE
+                        WHEN pl.semestre_periodo_letivo = 1 THEN 1   -- semestre 1 começa em Janeiro
+                        ELSE 7                                        -- semestre 2 começa em Julho
+                    END,
+                2, '0') || '/' || pl.aa_periodo_letivo, 'DD/MM/YYYY'),
+                provas.meses_offset
+            ),
+            'DD/MM/YYYY'
+        )
+        || ' '
+        || LPAD(TRUNC(gt_min.hr_inicio_grade_turma / 60), 2, '0')
+        || ':'
+        || LPAD(MOD(gt_min.hr_inicio_grade_turma, 60), 2, '0'),
+        'DD/MM/YYYY HH24:MI'
+    )                          AS dt_hr_avaliacao,
+    0                          AS cd_tipo_avaliacao,
+    t.id_turma
+FROM
+    TURMA t
+    JOIN PERIODO_LETIVO pl
+        ON pl.id_periodo_letivo = t.id_periodo_letivo
+    -- Menor hr_inicio_grade_turma da turma
+    JOIN (
+        SELECT
+            id_turma,
+            MIN(hr_inicio_grade_turma) AS hr_inicio_grade_turma
+        FROM GRADE_TURMA
+        GROUP BY id_turma
+    ) gt_min
+        ON gt_min.id_turma = t.id_turma
+    -- Cross join com as duas provas (offset de meses e descrição)
+    CROSS JOIN (
+        SELECT 'Primeira prova do semestre' AS ds_avaliacao, 2 AS meses_offset FROM DUAL
+        UNION ALL
+        SELECT 'Segunda prova do semestre',                  4               FROM DUAL
+    ) provas
+;
+
+
+-- AVALIACAO_RESULTADO
+INSERT INTO AVALIACAO_RESULTADO (
+    id_matricula,
+    id_avaliacao,
+    qt_nota_avaliacao_aluno
+)
+SELECT
+    m.id_matricula,
+    av.id_avaliacao,
+    -- Distribuição normal aproximada: média de 3 sorteios uniformes em [5, 10]
+    -- Cada parcela: 5 + DBMS_RANDOM.VALUE(0,1) * 5  →  ∈ [5, 10]
+    ROUND(
+        (
+            (5 + DBMS_RANDOM.VALUE * 5) +
+            (5 + DBMS_RANDOM.VALUE * 5) +
+            (5 + DBMS_RANDOM.VALUE * 5)
+        ) / 3,
+        2
+    )                          AS qt_nota_avaliacao_aluno
+FROM
+    AVALIACAO av
+    JOIN MATRICULA m
+        ON m.id_turma = av.id_turma
+;
+
+-- REGISTRO_AULA: 15 registros de aula por GRADE_TURMA
+INSERT INTO REGISTRO_AULA (dt_registro_aula, id_grade_turma)
+WITH seq AS (
+    SELECT LEVEL AS rn FROM DUAL CONNECT BY LEVEL <= 15
+),
+datas_inicio AS (
+    SELECT
+        gt.id_grade_turma,
+        TO_DATE(
+            '01/' ||
+            LPAD(
+                CASE pl.semestre_periodo_letivo
+                    WHEN 1 THEN 1
+                    ELSE 7
+                END,
+            2, '0') || '/' || pl.aa_periodo_letivo,
+            'DD/MM/YYYY'
+        ) AS data_inicio
+    FROM GRADE_TURMA gt
+    JOIN TURMA t        ON t.id_turma          = gt.id_turma
+    JOIN PERIODO_LETIVO pl ON pl.id_periodo_letivo = t.id_periodo_letivo
+)
+SELECT
+    TRUNC(
+        di.data_inicio
+        + (seq.rn - 1) * (180 / 15)
+        + DBMS_RANDOM.VALUE * (180 / 15)
+    ) AS dt_registro_aula,
+    di.id_grade_turma
+FROM datas_inicio di
+CROSS JOIN seq
+;
+
+-- REGISTRO_AULA_MATRICULA - Registro de chamada
+INSERT INTO REGISTRO_AULA_MATRICULA (
+    id_matricula,
+    dt_registro_aula,
+    id_grade_turma,
+    ic_presente_ausente
+)
+SELECT
+    m.id_matricula,
+    ra.dt_registro_aula,
+    ra.id_grade_turma,
+    -- 0 = ausente quando hash < 30  (~30% de ausência)
+    -- 1 = presente caso contrário   (~70% de presença)
+    CASE
+        WHEN MOD(
+                 (ROW_NUMBER() OVER (
+                      PARTITION BY ra.dt_registro_aula, ra.id_grade_turma
+                      ORDER BY m.id_matricula
+                  ) * 1103515245) + 12345,
+             97
+        ) < 30
+        THEN 0
+        ELSE 1
+    END AS ic_presente_ausente
+FROM
+    REGISTRO_AULA ra
+    JOIN GRADE_TURMA gt
+        ON gt.id_grade_turma = ra.id_grade_turma
+    JOIN MATRICULA m
+        ON m.id_turma = gt.id_turma
+;
