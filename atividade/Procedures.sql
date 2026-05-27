@@ -1,3 +1,5 @@
+-- PROCEDURES
+-- Procedure: Criar turmas para curso e período
 CREATE OR REPLACE PROCEDURE prc_criar_turmas_curso(
     p_id_curso IN INTEGER,
     p_id_periodo_letivo IN INTEGER,
@@ -56,7 +58,22 @@ BEGIN
 END;
 /
 
--- prc_associar_aluno_curso(id_aluno, id_curso, id_periodo_letivo)
+
+-- Procedure: Matricular aluno em curso
+PROCEDURE prc_matricular_aluno_curso (
+    p_id_aluno IN NUMBER,
+    p_id_curso IN NUMBER,
+    p_id_periodo IN NUMBER
+);
 -- Define código do aluno para ativo (0), coloca-o nas turmas do curso e período especificado (erro se não existir; nada de comportamento inesperado em procedures)
 
---
+-- Procedure: Registrar aula em data
+PROCEDURE prc_registrar_aula (
+    p_id_grade_turma IN NUMBER,
+    p_dt_aula IN DATE
+);
+
+-- Procedure: Relatório de presença no console
+PROCEDURE prc_relatorio_presenca_console (
+    p_id_turma IN NUMBER
+);
