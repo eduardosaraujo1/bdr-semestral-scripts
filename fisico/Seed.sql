@@ -1256,7 +1256,7 @@ matriculas_planejadas AS (
     ORDER BY
         a.id_aluno,
         t.id_periodo_letivo,
-        t.id_turma,
+        t.id_turma
 )
 SELECT
     SQ_MATRICULA.NEXTVAL,
