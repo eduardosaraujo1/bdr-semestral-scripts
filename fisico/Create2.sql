@@ -53,10 +53,10 @@ CREATE TABLE DISCIPLINA (
 
 CREATE TABLE COMPONENTE_CURRICULAR (
   id_componente_curricular INTEGER PRIMARY KEY,
+  id_ciclo_componente_curricular NUMBER(2) NOT NULL,
   id_curso INTEGER NOT NULL,
   id_disciplina INTEGER NOT NULL,
-  id_professor INTEGER NOT NULL,
-  id_ciclo_componente_curricular NUMBER(2) NOT NULL
+  id_professor INTEGER NOT NULL
 );
 
 CREATE TABLE GRADE_CURSO (
@@ -65,8 +65,7 @@ CREATE TABLE GRADE_CURSO (
   hr_inicio_grade_curso NUMBER(4) NOT NULL,
   cd_sala_grade_curso VARCHAR(20) NOT NULL,
   id_componente_curricular INTEGER NOT NULL,
-  CONSTRAINT ck_hora CHECK (hr_inicio_grade_curso BETWEEN 0 AND 1440),
-  CONSTRAINT uk_grade_curso UNIQUE (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso)
+  CONSTRAINT ck_hora_grade_curso CHECK (hr_inicio_grade_curso BETWEEN 0 AND 1440)
 );
 
 CREATE TABLE PERIODO_LETIVO (
@@ -99,7 +98,7 @@ CREATE TABLE GRADE_TURMA (
   cd_sala_grade_turma VARCHAR(20) NOT NULL,
   id_turma INTEGER NOT NULL,
   CONSTRAINT ck_dia_semana CHECK (dd_semana_grade_turma IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')),
-  CONSTRAINT ck_hora CHECK (hr_inicio_grade_turma BETWEEN 0 AND 1440)
+  CONSTRAINT ck_hora_grade_turma CHECK (hr_inicio_grade_turma BETWEEN 0 AND 1440)
 );
 
 CREATE TABLE AVALIACAO (
@@ -115,7 +114,6 @@ CREATE TABLE AVALIACAO (
 CREATE TABLE AVALIACAO_RESULTADO (
   id_matricula INTEGER NOT NULL,
   id_avaliacao INTEGER NOT NULL,
-  id_turma INTEGER NOT NULL,
   qt_nota_avaliacao_aluno NUMBER(4,2) NOT NULL,
   PRIMARY KEY (id_avaliacao, id_matricula)
 );
@@ -123,7 +121,6 @@ CREATE TABLE AVALIACAO_RESULTADO (
 CREATE TABLE REGISTRO_AULA (
   dt_registro_aula DATE NOT NULL,
   id_grade_turma INTEGER NOT NULL,
-  id_turma INTEGER NOT NULL,
   CONSTRAINT ck_date_only CHECK (dt_registro_aula=TRUNC(dt_registro_aula)),
   PRIMARY KEY (dt_registro_aula, id_grade_turma)
 );
@@ -132,12 +129,13 @@ CREATE TABLE REGISTRO_AULA_MATRICULA (
   id_matricula INTEGER NOT NULL,
   dt_registro_aula DATE NOT NULL,
   id_grade_turma INTEGER NOT NULL,
-  id_turma INTEGER NOT NULL,
   ic_presente_ausente NUMBER(1) DEFAULT 1 NOT NULL,
   PRIMARY KEY (dt_registro_aula, id_grade_turma, id_matricula)
 );
 
 CREATE UNIQUE INDEX uk_componente_curricular ON COMPONENTE_CURRICULAR (id_curso, id_disciplina, id_ciclo_componente_curricular);
+
+CREATE UNIQUE INDEX uk_grade_curso ON GRADE_CURSO (dd_semana_grade_curso, hr_inicio_grade_curso, cd_sala_grade_curso);
 
 CREATE UNIQUE INDEX uk_periodo_letivo ON PERIODO_LETIVO (aa_periodo_letivo, semestre_periodo_letivo);
 
@@ -145,46 +143,40 @@ CREATE UNIQUE INDEX uk_turma ON TURMA (id_curso, id_disciplina, id_ciclo_turma, 
 
 CREATE UNIQUE INDEX uk_matricula ON MATRICULA (id_turma, id_aluno);
 
-CREATE UNIQUE INDEX uk_grade_turma ON GRADE_TURMA (dd_semana_grade_turma, hr_inicio_grade_turma, cd_sala_grade_turma, id_turma);
+CREATE UNIQUE INDEX uk_grade_turma ON GRADE_TURMA (dd_semana_grade_turma, hr_inicio_grade_turma, cd_sala_grade_turma);
 
 CREATE UNIQUE INDEX uk_avaliacao ON AVALIACAO (id_turma, dt_hr_avaliacao);
 
-COMMENT ON COLUMN AVALIACAO_RESULTADO.id_turma IS 'Atributo estrangeiro passado para garantir consistência sem precisar de Triggers';
+ALTER TABLE COMPONENTE_CURRICULAR ADD FOREIGN KEY (id_curso) REFERENCES CURSO (id_curso) DEFERRABLE INITIALLY IMMEDIATE;
 
-COMMENT ON COLUMN REGISTRO_AULA.id_turma IS 'Atributo estrangeiro passado para garantir consistência sem precisar de Triggers';
+ALTER TABLE COMPONENTE_CURRICULAR ADD FOREIGN KEY (id_disciplina) REFERENCES DISCIPLINA (id_disciplina) DEFERRABLE INITIALLY IMMEDIATE;
 
-COMMENT ON COLUMN REGISTRO_AULA_MATRICULA.id_grade_turma IS 'Atributo estrangeiro passado para garantir consistência sem precisar de Triggers';
+ALTER TABLE COMPONENTE_CURRICULAR ADD FOREIGN KEY (id_professor) REFERENCES PROFESSOR (id_professor) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE COMPONENTE_CURRICULAR ADD FOREIGN KEY (id_curso) REFERENCES CURSO (id_curso);
+ALTER TABLE GRADE_CURSO ADD FOREIGN KEY (id_componente_curricular) REFERENCES COMPONENTE_CURRICULAR (id_componente_curricular) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE COMPONENTE_CURRICULAR ADD FOREIGN KEY (id_disciplina) REFERENCES DISCIPLINA (id_disciplina);
+ALTER TABLE TURMA ADD FOREIGN KEY (id_curso) REFERENCES CURSO (id_curso) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE COMPONENTE_CURRICULAR ADD FOREIGN KEY (id_professor) REFERENCES PROFESSOR (id_professor);
+ALTER TABLE TURMA ADD FOREIGN KEY (id_disciplina) REFERENCES DISCIPLINA (id_disciplina) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE GRADE_CURSO ADD FOREIGN KEY (id_componente_curricular) REFERENCES COMPONENTE_CURRICULAR (id_componente_curricular);
+ALTER TABLE TURMA ADD FOREIGN KEY (id_professor) REFERENCES PROFESSOR (id_professor) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE TURMA ADD FOREIGN KEY (id_curso) REFERENCES CURSO (id_curso);
+ALTER TABLE TURMA ADD FOREIGN KEY (id_periodo_letivo) REFERENCES PERIODO_LETIVO (id_periodo_letivo) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE TURMA ADD FOREIGN KEY (id_disciplina) REFERENCES DISCIPLINA (id_disciplina);
+ALTER TABLE MATRICULA ADD FOREIGN KEY (id_aluno) REFERENCES ALUNO (id_aluno) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE TURMA ADD FOREIGN KEY (id_professor) REFERENCES PROFESSOR (id_professor);
+ALTER TABLE MATRICULA ADD FOREIGN KEY (id_turma) REFERENCES TURMA (id_turma) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE TURMA ADD FOREIGN KEY (id_periodo_letivo) REFERENCES PERIODO_LETIVO (id_periodo_letivo);
+ALTER TABLE GRADE_TURMA ADD FOREIGN KEY (id_turma) REFERENCES TURMA (id_turma) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE MATRICULA ADD FOREIGN KEY (id_aluno) REFERENCES ALUNO (id_aluno);
+ALTER TABLE AVALIACAO ADD FOREIGN KEY (id_turma) REFERENCES TURMA (id_turma) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE MATRICULA ADD FOREIGN KEY (id_turma) REFERENCES TURMA (id_turma);
+ALTER TABLE AVALIACAO_RESULTADO ADD FOREIGN KEY (id_matricula) REFERENCES MATRICULA (id_matricula) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE GRADE_TURMA ADD FOREIGN KEY (id_turma) REFERENCES TURMA (id_turma);
+ALTER TABLE AVALIACAO_RESULTADO ADD FOREIGN KEY (id_avaliacao) REFERENCES AVALIACAO (id_avaliacao) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE AVALIACAO ADD FOREIGN KEY (id_turma) REFERENCES TURMA (id_turma);
+ALTER TABLE REGISTRO_AULA ADD FOREIGN KEY (id_grade_turma) REFERENCES GRADE_TURMA (id_grade_turma) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE AVALIACAO_RESULTADO ADD FOREIGN KEY (id_matricula, id_turma) REFERENCES MATRICULA (id_matricula, id_turma);
+ALTER TABLE REGISTRO_AULA_MATRICULA ADD FOREIGN KEY (id_matricula) REFERENCES MATRICULA (id_matricula) DEFERRABLE INITIALLY IMMEDIATE;
 
-ALTER TABLE AVALIACAO_RESULTADO ADD FOREIGN KEY (id_avaliacao, id_turma) REFERENCES AVALIACAO (id_avaliacao, id_turma);
-
-ALTER TABLE REGISTRO_AULA ADD FOREIGN KEY (id_grade_turma, id_turma) REFERENCES GRADE_TURMA (id_grade_turma, id_turma);
-
-ALTER TABLE REGISTRO_AULA_MATRICULA ADD FOREIGN KEY (dt_registro_aula, id_grade_turma, id_turma) REFERENCES REGISTRO_AULA (dt_registro_aula, id_grade_turma, id_turma);
-
-ALTER TABLE REGISTRO_AULA_MATRICULA ADD FOREIGN KEY (id_matricula, id_turma) REFERENCES MATRICULA (id_matricula, id_turma);
+ALTER TABLE REGISTRO_AULA_MATRICULA ADD FOREIGN KEY (dt_registro_aula, id_grade_turma) REFERENCES REGISTRO_AULA (dt_registro_aula, id_grade_turma) DEFERRABLE INITIALLY IMMEDIATE;

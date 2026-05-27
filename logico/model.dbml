@@ -19,7 +19,7 @@ Table PROFESSOR {
 }
 
 Table CURSO {
-  id_curso INTEGER [pk, increment]
+  id_curso INTEGER [pk]
   sg_curso VARCHAR(10) [not null]
   nm_curso VARCHAR(255) [not null]
   ds_curso VARCHAR(255)
@@ -31,7 +31,7 @@ Table CURSO {
 }
 
 Table DISCIPLINA {
-  id_disciplina INTEGER [pk, increment]
+  id_disciplina INTEGER [pk]
   sg_disciplina VARCHAR(16) [not null]
   nm_disciplina VARCHAR(255) [not null]
   ds_disciplina VARCHAR(255)
@@ -52,13 +52,14 @@ Table COMPONENTE_CURRICULAR {
 }
 
 Table GRADE_CURSO {
+  id_grade_curso INTEGER [pk]
   dd_semana_grade_curso CHAR(3) [not null]
   hr_inicio_grade_curso NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
   cd_sala_grade_curso VARCHAR(20) [not null]
   id_componente_curricular INTEGER [not null, ref: > COMPONENTE_CURRICULAR.id_componente_curricular]
 
   indexes {
-    (dd_semana_grade_curso, hr_inicio_grade_curso,cd_sala_grade_curso) [pk]
+    (dd_semana_grade_curso, hr_inicio_grade_curso,cd_sala_grade_curso) [unique, name: 'uk_grade_curso']
   }
   checks {
     `hr_inicio_grade_curso BETWEEN 0 AND 1440` [name: 'ck_hora']
@@ -70,7 +71,7 @@ Table PERIODO_LETIVO {
   aa_periodo_letivo NUMBER(4) [not null]
   semestre_periodo_letivo NUMBER(1) [not null]
   indexes {
-    (aa_periodo_letivo,semestre_periodo_letivo) [unique]
+    (aa_periodo_letivo,semestre_periodo_letivo) [unique, name: 'uk_periodo_letivo']
   }
   checks {
     `semestre_periodo_letivo IN (1,2)` [name: 'chk_semestre']
@@ -89,6 +90,7 @@ Table TURMA {
 
   indexes {
     (id_curso, id_disciplina, id_ciclo_turma, id_periodo_letivo) [unique, name: 'uk_turma']
+    (id_turma, id_periodo_letivo) [unique, name: 'uk_periodo_turma']
   }
 }
 
@@ -96,8 +98,9 @@ Table MATRICULA {
   id_matricula INTEGER [pk]
   id_aluno INTEGER [not null, ref: > ALUNO.id_aluno]
   id_turma INTEGER [not null, ref: > TURMA.id_turma]
-  INDEXES {
-    (id_turma, id_aluno) [unique]
+  indexes {
+    (id_turma, id_aluno) [unique, name: 'uk_matricula']
+    (id_matricula,id_turma) [unique, name: 'uk_turma_matricula']
   }
 }
 
@@ -106,7 +109,8 @@ Table GRADE_TURMA {
   dd_semana_grade_turma CHAR(3) [not null]
   hr_inicio_grade_turma NUMBER(4) [not null] // NUMBER(4): minutos depois da meia noite
   cd_sala_grade_turma VARCHAR(20) [not null]
-  id_turma INTEGER [not null, ref: > TURMA.id_turma]
+  id_periodo_letivo INTEGER [not null, note: 'Utilizado para constraint UNIQUE e evitar conflito de horário']
+  id_turma INTEGER [not null]
 
   checks {
     `dd_semana_grade_turma IN ('SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB', 'DOM')` [name: 'ck_dia_semana']
@@ -114,9 +118,10 @@ Table GRADE_TURMA {
   }
 
   indexes {
-    (dd_semana_grade_turma,hr_inicio_grade_turma,cd_sala_grade_turma,id_turma) [unique, name: '']
+    (dd_semana_grade_turma,hr_inicio_grade_turma,cd_sala_grade_turma,id_periodo_letivo) [unique, name: 'uk_grade_turma']
   }
 }
+Ref: GRADE_TURMA.(id_turma,id_periodo_letivo) > TURMA.(id_turma,id_periodo_letivo)
 
 Table AVALIACAO {
   id_avaliacao INTEGER [pk]
@@ -131,6 +136,7 @@ Table AVALIACAO {
 
   indexes {
     (id_turma, dt_hr_avaliacao) [unique, name: 'uk_avaliacao']
+    (id_avaliacao, id_turma) [unique, name: 'uk_turma_avaliacao']
   }
 }
 
@@ -154,6 +160,7 @@ Table REGISTRO_AULA {
 
   indexes {
     (dt_registro_aula, id_grade_turma) [pk]
+    (dt_registro_aula, id_grade_turma, id_turma) [unique, name: 'uk_turma_registro_aula']
   }
   checks {
     `dt_registro_aula=TRUNC(dt_registro_aula)` [name: 'ck_date_only']
@@ -174,4 +181,5 @@ Table REGISTRO_AULA_MATRICULA {
 }
 Ref: REGISTRO_AULA_MATRICULA.(dt_registro_aula, id_grade_turma, id_turma)
     > REGISTRO_AULA.(dt_registro_aula, id_grade_turma, id_turma)
-Ref: REGISTRO_AULA_MATRICULA.(id_matricula,id_turma) > MATRICULA.(id_matricula,id_turma)
+Ref: REGISTRO_AULA_MATRICULA.(id_matricula,id_turma)
+    > MATRICULA.(id_matricula,id_turma)
