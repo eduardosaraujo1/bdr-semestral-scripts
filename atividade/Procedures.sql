@@ -4,6 +4,7 @@ CREATE OR REPLACE PROCEDURE prc_criar_turmas_curso(
     p_id_ciclo_turma IN NUMBER
 ) IS
 BEGIN
+    -- TODO: Verificar se turmas já existem. Se sim, abortar execução com exception
     INSERT INTO TURMA (
         id_turma,
         qt_vagas_turma,
@@ -54,3 +55,8 @@ BEGIN
     COMMIT;
 END;
 /
+
+-- prc_associar_aluno_curso(id_aluno, id_curso, id_periodo_letivo)
+-- Define código do aluno para ativo (0), coloca-o nas turmas do curso e período especificado (erro se não existir; nada de comportamento inesperado em procedures)
+
+--
