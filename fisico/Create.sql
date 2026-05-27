@@ -151,7 +151,7 @@ CREATE TABLE REGISTRO_AULA_MATRICULA (
   id_matricula INTEGER NOT NULL,
   dt_registro_aula DATE NOT NULL,
   id_grade_turma INTEGER NOT NULL,
-  ic_presente_ausente NUMBER(1) DEFAULT 1 NOT NULL,
+  ic_ausente_presente NUMBER(1) DEFAULT 1 NOT NULL,
   PRIMARY KEY (dt_registro_aula, id_grade_turma, id_matricula),
   CONSTRAINT fk_reg_aula_mat_matricula FOREIGN KEY (id_matricula) REFERENCES MATRICULA (id_matricula),
   CONSTRAINT fk_reg_aula_mat_reg_aula FOREIGN KEY (dt_registro_aula, id_grade_turma) REFERENCES REGISTRO_AULA (dt_registro_aula, id_grade_turma)

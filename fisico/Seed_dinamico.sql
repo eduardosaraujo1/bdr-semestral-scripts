@@ -1909,7 +1909,7 @@ INSERT INTO REGISTRO_AULA_MATRICULA (
     id_matricula,
     dt_registro_aula,
     id_grade_turma,
-    ic_presente_ausente
+    ic_ausente_presente
 )
 SELECT
     m.id_matricula,
@@ -1927,7 +1927,7 @@ SELECT
         ) < 30
         THEN 0
         ELSE 1
-    END AS ic_presente_ausente
+    END AS ic_ausente_presente
 FROM
     REGISTRO_AULA ra
     JOIN GRADE_TURMA gt
