@@ -10,6 +10,14 @@ DROP SEQUENCE SQ_MATRICULA;
 DROP SEQUENCE SQ_GRADE_TURMA;
 DROP SEQUENCE SQ_AVALIACAO;
 
+DROP PACKAGE BODY pk_banco_semestral;
+DROP PACKAGE pk_banco_semestral;
+
+DROP FUNCTION fn_media_notas;
+DROP FUNCTION fn_percentual_frequencia;
+DROP FUNCTION fn_situacao_aluno;
+DROP FUNCTION fn_data_inicio_periodo_letivo;
+
 DROP TABLE REGISTRO_AULA_MATRICULA;
 DROP TABLE REGISTRO_AULA;
 DROP TABLE AVALIACAO_RESULTADO;
@@ -24,8 +32,6 @@ DROP TABLE DISCIPLINA;
 DROP TABLE CURSO;
 DROP TABLE PROFESSOR;
 DROP TABLE ALUNO;
-
-DROP FUNCTION fn_data_inicio_periodo_letivo;
 
 CREATE SEQUENCE SQ_ALUNO
 START WITH 1000;
@@ -2051,7 +2057,7 @@ SELECT
     (5 + ROUND((DBMS_RANDOM.VALUE + DBMS_RANDOM.VALUE) / 2 * 10) / 2)
     AS qt_nota_avaliacao_aluno
 FROM AVALIACAO av
-JOIN MATRICULA m ON m.id_turma = av.id_turma ;
+JOIN MATRICULA m ON m.id_turma = av.id_turma;
 
 -- REGISTRO_AULA: 15 registros de aula por GRADE_TURMA
 CREATE OR REPLACE FUNCTION fn_data_inicio_periodo_letivo (
