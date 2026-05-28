@@ -3,10 +3,8 @@
 CREATE OR REPLACE PROCEDURE prc_criar_turmas_curso(
     p_id_curso IN INTEGER,
     p_id_periodo_letivo IN INTEGER,
-    p_id_ciclo_turma IN NUMBER
-) IS
+    p_id_ciclo_turma IN NUMBER) IS
 BEGIN
-    -- TODO: Verificar se turmas já existem. Se sim, abortar execução com exception
     INSERT INTO TURMA (
         id_turma,
         qt_vagas_turma,
@@ -53,27 +51,162 @@ BEGIN
     WHERE cc.id_curso = p_id_curso
       AND cc.id_ciclo_componente_curricular = p_id_ciclo_turma;
 
-
     COMMIT;
 END;
 /
 
 
 -- Procedure: Matricular aluno em curso
-PROCEDURE prc_matricular_aluno_curso (
+CREATE OR REPLACE PROCEDURE prc_matricular_aluno_curso (
     p_id_aluno IN NUMBER,
     p_id_curso IN NUMBER,
-    p_id_periodo IN NUMBER
-);
--- Define código do aluno para ativo (0), coloca-o nas turmas do curso e período especificado (erro se não existir; nada de comportamento inesperado em procedures)
+    p_id_periodo IN NUMBER)
+IS
+    v_qt_turmas NUMBER;
+    CURSOR c_turmas IS
+        SELECT t.id_turma
+        FROM TURMA t
+        WHERE t.id_curso = p_id_curso
+          AND t.id_periodo_letivo = p_id_periodo
+        ORDER BY t.id_ciclo_turma;
+
+BEGIN
+    SELECT COUNT(*)
+    INTO v_qt_turmas
+    FROM TURMA t
+    WHERE t.id_curso = p_id_curso
+      AND t.id_periodo_letivo = p_id_periodo;
+
+    IF v_qt_turmas = 0 THEN
+        RAISE_APPLICATION_ERROR(
+            -20001,
+            'Nenhuma turma encontrada para o curso e período informados.'
+        );
+    END IF;
+
+    UPDATE ALUNO
+    SET cd_situacao_aluno = 0
+    WHERE id_aluno = p_id_aluno;
+
+    FOR turma IN c_turmas LOOP
+        INSERT INTO MATRICULA (id_matricula, id_aluno, id_turma)
+        VALUES (SQ_MATRICULA.NEXTVAL, p_id_aluno, turma.id_turma);
+    END LOOP;
+
+    COMMIT;
+
+END;
+/
 
 -- Procedure: Registrar aula em data
-PROCEDURE prc_registrar_aula (
+CREATE OR REPLACE PROCEDURE prc_registrar_aula (
     p_id_grade_turma IN NUMBER,
     p_dt_aula IN DATE
-);
+)
+IS
+    CURSOR c_matriculas IS
+        SELECT m.id_matricula
+        FROM MATRICULA m
+        WHERE m.id_turma = (
+            SELECT gt.id_turma
+            FROM GRADE_TURMA gt
+            WHERE gt.id_grade_turma = p_id_grade_turma
+        );
+BEGIN
+    INSERT INTO REGISTRO_AULA (
+        dt_registro_aula,
+        id_grade_turma
+    )
+    VALUES (
+        TRUNC(p_dt_aula),
+        p_id_grade_turma
+    );
+
+    FOR matricula IN c_matriculas LOOP
+        INSERT INTO REGISTRO_AULA_MATRICULA (
+            id_matricula,
+            dt_registro_aula,
+            id_grade_turma,
+            ic_ausente_presente
+        )
+        VALUES (
+            matricula.id_matricula,
+            TRUNC(p_dt_aula),
+            p_id_grade_turma,
+            1
+        );
+    END LOOP;
+    COMMIT;
+END;
+/
 
 -- Procedure: Relatório de presença no console
-PROCEDURE prc_relatorio_presenca_console (
+CREATE OR REPLACE PROCEDURE prc_relatorio_presenca_console (
     p_id_turma IN NUMBER
-);
+)
+IS
+    v_frequencia NUMBER(5,2);
+    CURSOR c_alunos IS
+        SELECT
+            a.nm_aluno,
+            m.id_matricula
+        FROM MATRICULA m
+        JOIN ALUNO a
+            ON a.id_aluno = m.id_aluno
+        WHERE m.id_turma = p_id_turma
+        ORDER BY a.nm_aluno;
+
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Aluno;Porcentagem de presença');
+    FOR aluno IN c_alunos LOOP
+        v_frequencia := FN_PERCENTUAL_FREQUENCIA(aluno.id_matricula);
+
+        DBMS_OUTPUT.PUT_LINE(
+            aluno.nm_aluno || ';'
+            || ROUND(v_frequencia, 2) || '%'
+        );
+
+    END LOOP;
+
+END;
+/
+
+-- Procedure: exibir grade horária
+CREATE OR REPLACE PROCEDURE prc_exibir_grade_horaria (
+    p_id_curso IN CURSO.id_curso%TYPE,
+    p_id_periodo_letivo IN PERIODO_LETIVO.id_periodo_letivo%TYPE
+)
+IS
+    CURSOR c_grade IS
+        SELECT
+            t.id_turma,
+            t.id_ciclo_turma,
+            d.nm_disciplina,
+            gt.dd_semana_grade_turma,
+            gt.hr_inicio_grade_turma,
+            gt.cd_sala_grade_turma
+        FROM TURMA t
+        JOIN DISCIPLINA d
+            ON d.id_disciplina = t.id_disciplina
+        JOIN GRADE_TURMA gt
+            ON gt.id_turma = t.id_turma
+        WHERE t.id_curso = p_id_curso
+          AND t.id_periodo_letivo = p_id_periodo_letivo
+        ORDER BY
+            t.id_ciclo_turma,
+            gt.dd_semana_grade_turma,
+            gt.hr_inicio_grade_turma;
+BEGIN
+DBMS_OUTPUT.PUT_LINE('Turma;Ciclo;Disciplina;Dia;Horario;Sala');
+    FOR aula IN c_grade LOOP
+        DBMS_OUTPUT.PUT_LINE(
+            aula.id_turma || ';'
+            || aula.id_ciclo_turma || ';'
+            || aula.nm_disciplina || ';'
+            || aula.dd_semana_grade_turma || ';'
+            || aula.hr_inicio_grade_turma || ';'
+            || aula.cd_sala_grade_turma
+        );
+    END LOOP;
+END;
+/

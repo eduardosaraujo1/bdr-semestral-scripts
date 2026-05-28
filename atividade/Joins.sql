@@ -12,7 +12,7 @@ JOIN DISCIPLINA d
     ON d.id_disciplina = t.id_disciplina
 JOIN GRADE_TURMA gt
     ON gt.id_turma = t.id_turma
-WHERE t.id_turma = 1
+WHERE t.id_curso = 1 AND t.id_periodo_letivo = 3 AND t.id_ciclo_turma = 2
 ORDER BY gt.dd_semana_grade_turma,
          gt.hr_inicio_grade_turma;
 
@@ -30,7 +30,8 @@ JOIN TURMA t
     ON t.id_turma = m.id_turma
 JOIN DISCIPLINA d
     ON d.id_disciplina = t.id_disciplina
-ORDER BY a.nm_aluno;
+ORDER BY a.nm_aluno
+FETCH NEXT 100 ROWS ONLY; -- Remova se não se importar com a performance da chamada de três funções
 
 -- Consulta: Turmas por professor
 SELECT

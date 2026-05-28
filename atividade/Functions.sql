@@ -22,29 +22,22 @@ CREATE OR REPLACE FUNCTION fn_percentual_frequencia (
 )
 RETURN NUMBER
 IS
-    v_total_aulas NUMBER;
-    v_presencas NUMBER;
+    v_percentual NUMBER;
 BEGIN
-    SELECT COUNT(*)
-    INTO v_total_aulas
+    SELECT
+        CASE
+            WHEN COUNT(*) = 0 THEN 0
+            ELSE SUM(ic_ausente_presente) / COUNT(*) * 100
+        END
+    INTO v_percentual
     FROM REGISTRO_AULA_MATRICULA
     WHERE id_matricula = p_id_matricula;
 
-    SELECT COUNT(*)
-    INTO v_presencas
-    FROM REGISTRO_AULA_MATRICULA
-    WHERE id_matricula = p_id_matricula
-      AND ic_ausente_presente = 1;
-
-    IF v_total_aulas = 0 THEN
-        RETURN 0;
-    END IF;
-
-    RETURN (v_presencas / v_total_aulas) * 100;
+    RETURN v_percentual;
 END;
 /
 
--- Função: Determinar situação do aluno
+-- Função: Determinar situação de aprovação do aluno
 CREATE OR REPLACE FUNCTION fn_situacao_aluno (
     p_id_matricula IN MATRICULA.id_matricula%TYPE
 )

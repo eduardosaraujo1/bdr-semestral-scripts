@@ -213,6 +213,7 @@ INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_ho
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina) VALUES (100,'PROLINN100','Processamento de Linguagem Natural',80);
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina) VALUES (101,'LABDESM101','Laboratório de Desenvolvimento Multiplataforma',80);
 INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina) VALUES (102,'ETIPROP102','Etica Profissional e Patentes',80);
+INSERT INTO DISCIPLINA (id_disciplina, sg_disciplina, nm_disciplina, qt_carga_horaria_disciplina) VALUES (103,'SISINFO103','Sistemas de Informação',80);
 
 -- COMPONENTE_CURRICULAR
 INSERT INTO COMPONENTE_CURRICULAR (id_componente_curricular, id_curso, id_disciplina, id_ciclo_componente_curricular, id_professor) VALUES (1,1,1,1,5);
@@ -1918,7 +1919,7 @@ SELECT
     CASE
         WHEN MOD(
             (ROW_NUMBER() OVER (ORDER BY ra.id_grade_turma))
-            * 1103515245 + 12345, 97) < 30
+            * 1103515245 + 12345, 97) < 10
         THEN 0
         ELSE 1
     END ic_ausente_presente
