@@ -2152,7 +2152,6 @@ END;
 /
 
 CREATE OR REPLACE PACKAGE BODY pk_banco_semestral IS
-
     -- FUNCTIONS
     -- Função: Calcular média de aluno
     FUNCTION fn_media_notas (
